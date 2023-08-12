@@ -28,15 +28,25 @@ These towers appear to have been made by a people long lost. Be careful, though 
 
 ### Know Yourself
 
-#### Slash
+#### Slash - <kbd>Space</kbd>
+
+<img src = "https://github.com/SgtR0ck/Into-the-Void/assets/8111664/0ef28bd9-0928-4f6c-831f-4dfaf988b705" 
+ width="600"
+ height="auto" />
 
 The most basic of attacks, but your most certain one as well. Very low cooldown time and can dish it out so long as you're still alive
 
-#### Dash
+#### Dash - <kbd>Shift</kbd>
+
+<img src = "https://github.com/SgtR0ck/Into-the-Void/assets/8111664/3c8e2a56-c0b0-4510-989f-b09b049cccc2" 
+ width="600"
+ height="auto" />
 
 A quick way to get out of danger (or into it!). You only have a max of three in a row but they will refill over time
 
-#### Fireball
+#### Fireball - <kbd>Caps Lock</kbd>
+
+![Fireball](https://github.com/SgtR0ck/Into-the-Void/assets/8111664/aa75f027-0924-4511-a4d2-eb6786ea65b5)
 
 Your long range attack, great for keeping your distance. Don't be too over zealous though, you're limited by your mana!
 
@@ -44,13 +54,25 @@ Your long range attack, great for keeping your distance. Don't be too over zealo
 
 ### Portals
 
+<img src = "https://github.com/SgtR0ck/Into-the-Void/assets/8111664/a07b956a-cb6e-4595-8cf1-39ffa1ab8bb3" 
+ width="600"
+ height="auto" />
+
 These are your way to travel through the Void. Just make sure they're activated first!
 
 ### Health Potions
 
+<img src = "https://github.com/SgtR0ck/Into-the-Void/assets/8111664/5b3b1896-cac4-4155-b796-772968dd178d" 
+ width="600"
+ height="auto" />
+
 Dropped from enemies, these will help you recover your vitality.
 
 ### Mana Potions
+
+<img src = "https://github.com/SgtR0ck/Into-the-Void/assets/8111664/9bcdaab9-2db9-4ec7-a282-a03d3f791e65" 
+ width="600"
+ height="auto" />
 
 Dropped from enemies, these will help you feel the magic once more.
 
