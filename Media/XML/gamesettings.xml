@@ -1,0 +1,1963 @@
+<?xml version="1.0"?>
+
+<!-- Game settings -->
+
+<settings>
+  <game name="Into the Void" />
+  <renderer width="1024" height="768"/>
+   
+  <font file="Media\Fonts\AverageSans_24.spritefont"/>
+
+  <!-- sprites -->
+   
+  <sprites path="Media\Images">
+	<sprite name="tile" file="tile" ext ="png" frames="90"/>
+	<sprite name="floor" file="floor.png"/>
+	<sprite name="bullet" file="bullet.png"/>
+	<sprite name="spark" file="spark.png"/>
+	
+
+	<!-- Portal -->
+
+	<!-- <sprite name="ex_portal" file="ex_portal.png"/> -->
+	<!-- <sprite name="en_portal" file="en_portal.png"/> -->
+	<sprite name="portalsheet" file="portals.png"/>
+	<sprite name ="portal" sheet="portalsheet" frames="3">
+		<frame index="0" left="0" 	top="0" right="95" 	bottom="73"/>>
+		<frame index="1" left="96" 	top="0" right="191" bottom="73"/>>
+		<frame index="2" left="192" top="0" right="287" bottom="73"/>>
+	</sprite>
+
+	<!-- END Portal -->
+
+	<!-- End Title -->
+
+	<sprite name="endingscreen" file="endingscreen.png"/>
+
+	<!-- END End Title -->
+
+	<!-- GameOver -->
+
+	<sprite name="gameover" file="gameover.png"/>
+
+	<!-- END GameOver -->
+
+	<!-- Titlecard -->
+
+	<sprite name="titlecardsheet" file="titlecard.png"/>
+	<sprite name="titlecard" sheet="titlecardsheet" frames="3">
+		<frame index="0" left="0" right="1073" top="0" bottom="767"/>
+		<frame index="1" left="1074" right="2147" top="0" bottom="767"/>
+		<frame index="2" left="2148" right="3221" top="0" bottom="767"/>
+	</sprite>
+
+	<!-- END Titlecard -->
+
+	<!-- Fade-Out /Fade-In -->
+
+	<sprite name="fadeoutsheet" file="fadeoutsheet.png"/>
+	<sprite name="fadeout" sheet="fadeoutsheet" frames="28">
+		<frame index="0" left="0" right="1023" top="0" bottom="767"/>
+		<frame index="1" left="1024" right="2047" top="0" bottom="767"/>
+		<frame index="2" left="2048" right="3071" top="0" bottom="767"/>
+		<frame index="3" left="3072" right="4095" top="0" bottom="767"/>
+		<frame index="4" left="4096" right="5119" top="0" bottom="767"/>
+		<frame index="5" left="5120" right="6143" top="0" bottom="767"/>
+		<frame index="6" left="6144" right="7167" top="0" bottom="767"/>
+		<frame index="7" left="7168" right="8191" top="0" bottom="767"/>
+		<frame index="8" left="8192" right="9215" top="0" bottom="767"/>
+		<frame index="9" left="9216" right="10239" top="0" bottom="767"/>
+		<frame index="10" left="10240" right="11263" top="0" bottom="767"/>
+		<frame index="11" left="11264" right="12287" top="0" bottom="767"/>
+		<frame index="12" left="12288" right="13311" top="0" bottom="767"/>
+		<frame index="13" left="13312" right="14335" top="0" bottom="767"/>
+		<frame index="14" left="14336" right="15359" top="0" bottom="767"/>
+		<frame index="15" left="15360" right="16383" top="0" bottom="767"/>
+		<frame index="16" left="16384" right="17407" top="0" bottom="767"/>
+		<frame index="17" left="17408" right="18431" top="0" bottom="767"/>
+		<frame index="18" left="18432" right="19455" top="0" bottom="767"/>
+		<frame index="19" left="19456" right="20479" top="0" bottom="767"/>
+		<frame index="20" left="20480" right="21503" top="0" bottom="767"/>
+		<frame index="21" left="21504" right="22527" top="0" bottom="767"/>
+		<frame index="22" left="22528" right="23551" top="0" bottom="767"/>
+		<frame index="23" left="23552" right="24575" top="0" bottom="767"/>
+		<frame index="24" left="24576" right="25599" top="0" bottom="767"/>
+		<frame index="25" left="25600" right="26623" top="0" bottom="767"/>
+		<frame index="26" left="26624" right="27647" top="0" bottom="767"/>
+		<frame index="27" left="27648" right="28671" top="0" bottom="767"/>
+	</sprite>
+
+	<sprite name="fadeinsheet" file="fadeinsheet.png"/>
+	<sprite name="fadein" sheet="fadeinsheet" frames="28">
+		<frame index="0" left="0" right="1023" top="0" bottom="767"/>
+		<frame index="1" left="1024" right="2047" top="0" bottom="767"/>
+		<frame index="2" left="2048" right="3071" top="0" bottom="767"/>
+		<frame index="3" left="3072" right="4095" top="0" bottom="767"/>
+		<frame index="4" left="4096" right="5119" top="0" bottom="767"/>
+		<frame index="5" left="5120" right="6143" top="0" bottom="767"/>
+		<frame index="6" left="6144" right="7167" top="0" bottom="767"/>
+		<frame index="7" left="7168" right="8191" top="0" bottom="767"/>
+		<frame index="8" left="8192" right="9215" top="0" bottom="767"/>
+		<frame index="9" left="9216" right="10239" top="0" bottom="767"/>
+		<frame index="10" left="10240" right="11263" top="0" bottom="767"/>
+		<frame index="11" left="11264" right="12287" top="0" bottom="767"/>
+		<frame index="12" left="12288" right="13311" top="0" bottom="767"/>
+		<frame index="13" left="13312" right="14335" top="0" bottom="767"/>
+		<frame index="14" left="14336" right="15359" top="0" bottom="767"/>
+		<frame index="15" left="15360" right="16383" top="0" bottom="767"/>
+		<frame index="16" left="16384" right="17407" top="0" bottom="767"/>
+		<frame index="17" left="17408" right="18431" top="0" bottom="767"/>
+		<frame index="18" left="18432" right="19455" top="0" bottom="767"/>
+		<frame index="19" left="19456" right="20479" top="0" bottom="767"/>
+		<frame index="20" left="20480" right="21503" top="0" bottom="767"/>
+		<frame index="21" left="21504" right="22527" top="0" bottom="767"/>
+		<frame index="22" left="22528" right="23551" top="0" bottom="767"/>
+		<frame index="23" left="23552" right="24575" top="0" bottom="767"/>
+		<frame index="24" left="24576" right="25599" top="0" bottom="767"/>
+		<frame index="25" left="25600" right="26623" top="0" bottom="767"/>
+		<frame index="26" left="26624" right="27647" top="0" bottom="767"/>
+		<frame index="27" left="27648" right="28671" top="0" bottom="767"/>
+	</sprite>
+
+	<!-- END Fade-Out /Fade-in -->
+	 
+    <sprite name="spritesheet" file="spritesheet.png"/>
+	<sprite name="hero_sprite_sheet" file="hero_sprite_sheet.png"/>
+	<sprite name="rabitesheet" file="rabite.png"/>
+	<sprite name="oakseedsheet" file="oakseed.png"/>
+	<sprite name="player" file="player.png"/>
+    <sprite name="player"  sheet="player" left="0"   top="0"  right="67"  bottom="52"/>
+    <sprite name="bullet2" sheet="spritesheet" left="145" top="0"  right="153" bottom="8"/>
+    <!--sprite name="spark"   sheet="spritesheet" left="0"   top="73" right="62"  bottom="138"/-->
+    <sprite name="smoke"   sheet="spritesheet" left="62"  top="73" right="128" bottom="138"/>
+    <sprite name="greenline" file="greenline.png"/>
+	<sprite name="swing" file="swing.png"/>
+	<sprite name="testswing" file="testswing.png"/>
+	
+	<!-- items -->
+
+	<sprite name="manapotion" file="bluepotion.png"/>
+	<sprite name="healthpotion" file="redpotion.png"/>
+	<sprite name="keysheet" file="keysheet.png"/>
+	<sprite name ="key" sheet="keysheet" frames="2">
+		<frame index="0" left="0"	top="0"	right ="31"	bottom="31"/>>
+		<frame index="1" left="32"	top="0"	right ="64"	bottom="31"/>>
+	</sprite>
+	<sprite name="locktestsheet" file="locktestsheet.png"/>
+	<sprite name ="locktest" sheet="locktestsheet" frames="2">
+		<frame index="0" left="0"	top="0"	right ="31"	bottom="31"/>>
+		<frame index="1" left="32"	top="0"	right ="64"	bottom="31"/>>
+	</sprite>
+	<!-- END items-->
+
+	<!-- Spike Trap -->
+
+	<sprite name="spikes" file="spikes.png"/>
+
+	<!-- END Spike Trap-->
+
+	<!-- ParticleFx -->
+	
+	<sprite name="cross" file="cross.png"/>
+	<sprite name="mana" file="mana.png"/>
+	<sprite name="circle" file="circle.png"/>
+	<sprite name="circlenoborder" file="circlenoborder.png"/>
+	<sprite name="smoothcircle" file="smoothcircle.png"/>
+	<sprite name="manaparticlessheet" file="manaparticlessheet.png"/>
+	<sprite name ="manaparticles" sheet="manaparticlessheet" frames="8">
+		<frame index="0" left="0"	top="0"	right ="7"	bottom="7"/>>
+		<frame index="1" left="8"	top="0"	right ="15"	bottom="7"/>>
+		<frame index="2" left="16"	top="0"	right ="23"	bottom="7"/>>
+		<frame index="3" left="24"	top="0"	right ="31"	bottom="7"/>>
+		<frame index="4" left="32"	top="0"	right ="39"	bottom="7"/>>
+		<frame index="5" left="40"	top="0"	right ="47"	bottom="7"/>>
+		<frame index="6" left="48"	top="0"	right ="55"	bottom="7"/>>
+		<frame index="7" left="56"	top="0"	right ="63"	bottom="7"/>>
+	</sprite>
+	<sprite name="slimeparticlesheet" file="slimeparticlesheet.png"/>
+	<sprite name ="slimeparticles" sheet="slimeparticlesheet" frames="9">
+		<frame index="0" left="0"	top="0"	right ="7"	bottom="7"/>>
+		<frame index="1" left="8"	top="0"	right ="15"	bottom="7"/>>
+		<frame index="2" left="16"	top="0"	right ="23"	bottom="7"/>>
+		<frame index="3" left="24"	top="0"	right ="31"	bottom="7"/>>
+		<frame index="4" left="32"	top="0"	right ="39"	bottom="7"/>>
+		<frame index="5" left="40"	top="0"	right ="47"	bottom="7"/>>
+		<frame index="6" left="48"	top="0"	right ="55"	bottom="7"/>>
+		<frame index="7" left="56"	top="0"	right ="63"	bottom="7"/>>
+		<frame index="8" left="64"	top="0"	right ="71"	bottom="7"/>>
+	</sprite>
+
+	<sprite name="fireballsheet" file="fireball.png"/>
+	<sprite name ="fireball" sheet="fireballsheet" frames="6">
+		<frame index="0" left="0"	top="0"	right ="34"	bottom="33"/>>
+		<frame index="1" left="34"	top="0"	right ="68"	bottom="33"/>>
+		<frame index="2" left="68"	top="0"	right ="102"bottom="33"/>>
+		<frame index="3" left="102"	top="0"	right ="136"bottom="33"/>>
+		<frame index="4" left="136"	top="0"	right ="170"bottom="33"/>>
+		<frame index="5" left="170"	top="0"	right ="204"bottom="33"/>>
+	</sprite>
+
+	<sprite name="turretfireballsheet" file="turretfireball.png"/>
+	<sprite name ="turretfireball" sheet="turretfireballsheet" frames="6">
+		<frame index="0" left="0"	top="0"	right ="34"	bottom="33"/>>
+		<frame index="1" left="34"	top="0"	right ="68"	bottom="33"/>>
+		<frame index="2" left="68"	top="0"	right ="102"bottom="33"/>>
+		<frame index="3" left="102"	top="0"	right ="136"bottom="33"/>>
+		<frame index="4" left="136"	top="0"	right ="170"bottom="33"/>>
+		<frame index="5" left="170"	top="0"	right ="204"bottom="33"/>>
+	</sprite>
+
+	<sprite name="explosionsheet" file="explosion.png"/>
+	<sprite name ="explosion" sheet="explosionsheet" frames="13">
+		<frame index="0" left="0"	top="0"	right ="488"bottom="456"/>>
+		<frame index="1" left="488"	top="0"	right ="976"bottom="456"/>>
+		<frame index="2" left="976"top="0"	right ="1464"bottom="456"/>>
+		<frame index="3" left="1464"top="0"	right ="1952"bottom="456"/>>
+		<frame index="4" left="1952"top="0"	right ="2440"bottom="456"/>>
+		<frame index="5" left="2440"top="0"	right ="2928"bottom="456"/>>
+		<frame index="6" left="2928"top="0"	right ="3416"bottom="456"/>>
+		<frame index="7" left="3419"top="0"	right ="3904"bottom="456"/>>
+		<frame index="8" left="3904"top="0"	right ="4392"bottom="456"/>>
+		<frame index="9" left="4392"top="0"	right ="4880"bottom="456"/>>
+		<frame index="10" left="4880"top="0"right ="5368"bottom="456"/>>
+		<frame index="11" left="5368"top="0"right ="5856"bottom="456"/>>
+		<frame index="12" left="5856"top="0"right ="6344"bottom="456"/>>
+	</sprite>
+
+	<sprite name="explosion2sheet" file="explosion-c.png"/>
+	<sprite name ="explosion2" sheet="explosion2sheet" frames="10">
+		<frame index="0" left="0"	top="0"	right ="48"bottom="48"/>>
+		<frame index="1" left="48"	top="0"	right ="96"bottom="48"/>>
+		<frame index="2" left="96"top="0"	right ="144"bottom="48"/>>
+		<frame index="3" left="144"top="0"	right ="192"bottom="48"/>>
+		<frame index="4" left="192"top="0"	right ="240"bottom="48"/>>
+		<frame index="5" left="240"top="0"	right ="288"bottom="48"/>>
+		<frame index="6" left="288"top="0"	right ="336"bottom="48"/>>
+		<frame index="7" left="336"top="0"	right ="384"bottom="48"/>>
+		<frame index="8" left="384"top="0"	right ="432"bottom="48"/>>
+		<frame index="9" left="432"top="0"	right ="480"bottom="48"/>>
+	</sprite>
+
+	<sprite name="explosion3sheet" file="texplosion.png"/>
+	<sprite name ="explosion3" sheet="explosion3sheet" frames="15">
+		<frame index="0" left="0"	top="0"	right ="82"bottom="72"/>>
+		<frame index="1" left="82"	top="0"	right ="164"bottom="72"/>>
+		<frame index="2" left="164"top="0"	right ="246"bottom="72"/>>
+		<frame index="3" left="246"top="0"	right ="328"bottom="72"/>>
+		<frame index="4" left="328"top="0"	right ="410"bottom="72"/>>
+		<frame index="5" left="410"top="0"	right ="492"bottom="72"/>>
+		<frame index="6" left="492"top="0"	right ="574"bottom="72"/>>
+		<frame index="7" left="574"top="0"	right ="656"bottom="72"/>>
+		<frame index="8" left="656"top="0"	right ="738"bottom="72"/>>
+		<frame index="9" left="738"top="0"	right ="820"bottom="72"/>>
+		<frame index="10" left="820"top="0"	right ="902"bottom="72"/>>
+		<frame index="11" left="902"top="0"	right ="984"bottom="72"/>>
+		<frame index="12" left="1066"top="0"	right ="1066"bottom="72"/>>
+		<frame index="13" left="1148"top="0"	right ="1148"bottom="72"/>>
+		<frame index="14" left="1230"top="0"	right ="1230"bottom="72"/>>
+	</sprite>
+
+	<sprite name="explosion4sheet" file="explosion-a.png"/>
+	<sprite name ="explosion4" sheet="explosion4sheet" frames="8">
+		<frame index="0" left="0"	top="0"	right ="48"bottom="48"/>>
+		<frame index="1" left="48"	top="0"	right ="96"bottom="48"/>>
+		<frame index="2" left="96"top="0"	right ="144"bottom="48"/>>
+		<frame index="3" left="144"top="0"	right ="192"bottom="48"/>>
+		<frame index="4" left="192"top="0"	right ="240"bottom="48"/>>
+		<frame index="5" left="240"top="0"	right ="288"bottom="48"/>>
+		<frame index="6" left="288"top="0"	right ="336"bottom="48"/>>
+		<frame index="7" left="336"top="0"	right ="384"bottom="48"/>>
+	</sprite>
+	
+	<!-- END ParticleFx -->
+
+
+	<!-- Menu -->
+
+	<sprite name="startsheet" file="start.png"/>
+	<sprite name="start" sheet="startsheet" frames="2">
+		<frame index="0" left="0" 	top="0" right="288" bottom="96"/>>
+		<frame index="1" left="289" top="0" right="575" bottom="95"/>>
+	</sprite>
+
+	<sprite name="exitsheet" file="exit.png"/>
+	<sprite name="exit" sheet="exitsheet" frames="2">
+		<frame index="0" left="0" 	top="0" right="288" bottom="96"/>>
+		<frame index="1" left="289" top="0" right="575" bottom="95"/>>
+	</sprite>
+
+	<sprite name="bg" file="bg.png"/>
+
+	<!-- END Menu -->
+
+	<!-- Health Bar -->
+
+	<sprite name="healthbarfull" file="HealthBarFull.png"/>
+	<sprite name="healthbar5" file="HealthBar5.png"/>
+	<sprite name="healthbar4" file="HealthBar4.png"/>
+	<sprite name="healthbar3" file="HealthBar3.png"/>
+	<sprite name="healthbar2" file="HealthBar2.png"/>
+	<sprite name="healthbar1" file="HealthBar1.png"/>
+	<sprite name="healthbarempty" file="HealthBarEmpty.png"/>
+
+	<!-- END Health Bar -->
+
+	<!-- Mana Bar -->
+
+	<sprite name="manabarfull" file="ManaBarFull.png"/>
+	<sprite name="manabar5" file="ManaBar5.png"/>
+	<sprite name="manabar4" file="ManaBar4.png"/>
+	<sprite name="manabar3" file="ManaBar3.png"/>
+	<sprite name="manabar2" file="ManaBar2.png"/>
+	<sprite name="manabar1" file="ManaBar1.png"/>
+	<sprite name="manabarempty" file="ManaBarEmpty.png"/>
+
+	<!-- END Mana Bar-->
+
+	<!-- START Stamina Wheel-->
+
+	<sprite name="Staminawheelfull" file="StaminaWheelFull.png"/>
+	<sprite name="Staminawheel2" file="StaminaWheel2.png"/>
+	<sprite name="Staminawheel1" file="StaminaWheel1.png"/>
+	<sprite name="Staminawheelempty" file="StaminaWheelEmpty.png"/>
+
+	<!-- END Stamina Wheel -->
+
+	<!-- START Tower -->
+
+	<sprite name="turretsheet" file="turret.png"/>
+	<sprite name ="turret" sheet="turretsheet" frames="14">
+		<frame index="0" left="0"	top="0"	right ="100"bottom="100"/>>
+		<frame index="1" left="100"	top="0"	right ="200"bottom="100"/>>
+		<frame index="2" left="200"top="0"	right ="300"bottom="100"/>>
+		<frame index="3" left="300"top="0"	right ="400"bottom="100"/>>
+		<frame index="4" left="400"top="0"	right ="500"bottom="100"/>>
+		<frame index="5" left="500"top="0"	right ="600"bottom="100"/>>
+		<frame index="6" left="600"top="0"	right ="700"bottom="100"/>>
+		<frame index="7" left="700"top="0"	right ="800"bottom="100"/>>
+		<frame index="8" left="800"top="0"	right ="900"bottom="100"/>>
+		<frame index="9" left="900"top="0"	right ="1000"bottom="100"/>>
+		<frame index="10" left="1000"top="0"	right ="1100"bottom="100"/>>
+		<frame index="11" left="1100"top="0"	right ="1200"bottom="100"/>>
+		<frame index="12" left="1200"top="0"	right ="1300"bottom="100"/>>
+		<frame index="13" left="1300"top="0"	right ="1400"bottom="100"/>>
+	</sprite>
+
+	<!-- END Tower -->
+
+	<!-- Mine decor -->
+	<sprite name="minesheet" file="minesheet.png"/>
+	<sprite name ="goldui" sheet="minesheet" frames="2">
+		<frame index="0" left="0"	top="0"	right ="31"	bottom="31"/>>
+		<frame index="1" left="64"	top="0"	right ="95"	bottom="31"/>>
+	</sprite>
+	<sprite name ="golditems" sheet="minesheet" frames="2">
+		<frame index="0" left="32"	top="0"	right ="63"	bottom="31"/>>
+		<frame index="1" left="96"	top="0"	right ="127"	bottom="31"/>>
+	</sprite>
+	<sprite name ="flowerui" sheet="minesheet" frames="4">
+		<frame index="0" left="288"	top="0"	right ="319"	bottom="31"/>>
+		<frame index="1" left="352"	top="0"	right ="383"	bottom="31"/>>
+		<frame index="2" left="288"	top="32"	right ="319"	bottom="63"/>>
+		<frame index="3" left="352"	top="32"	right ="383"	bottom="63"/>>
+	</sprite>
+	<sprite name ="floweritems" sheet="minesheet" frames="4">
+		<frame index="0" left="320"	top="0"	right ="351"	bottom="31"/>>
+		<frame index="1" left="384"	top="0"	right ="415"	bottom="31"/>>
+		<frame index="2" left="320"	top="32"	right ="351"	bottom="63"/>>
+		<frame index="3" left="384"	top="32"	right ="415"	bottom="63"/>>
+	</sprite>
+	<sprite name ="silverui" sheet="minesheet" frames="2">
+		<frame index="0" left="544"	top="0"	right ="575"	bottom="31"/>>
+		<frame index="1" left="0"	top="32"	right ="31"	bottom="63"/>>
+	</sprite>
+	<sprite name ="silveritems" sheet="minesheet" frames="2">
+		<frame index="0" left="0"	top="32"	right ="31"	bottom="63"/>>
+		<frame index="1" left="32"	top="32"	right ="63"	bottom="63"/>>
+	</sprite>
+	<sprite name ="gemui" sheet="minesheet" frames="4">
+		<frame index="0" left="192"	top="0"	right ="223"	bottom="31"/>>
+		<frame index="1" left="256"	top="0"	right ="287"	bottom="31"/>>
+		<frame index="2" left="192"	top="32"	right ="223"	bottom="63"/>>
+		<frame index="3" left="256"	top="32"	right ="287"	bottom="63"/>>
+	</sprite>
+	<sprite name ="gemitems" sheet="minesheet" frames="4">
+		<frame index="0" left="224"	top="0"	right ="255"	bottom="31"/>>
+		<frame index="1" left="288"	top="0"	right ="319"	bottom="31"/>>
+		<frame index="2" left="224"	top="32"	right ="255"	bottom="63"/>>
+		<frame index="3" left="288"	top="32"	right ="319"	bottom="63"/>>
+	</sprite>
+	<sprite name ="goldrock" sheet="minesheet" frames="6">
+		<frame index="0" left="64"	top="0"	right ="95"	bottom="31"/>>
+		<frame index="1" left="96"	top="0"	right ="127"	bottom="31"/>>
+		<frame index="2" left="128"	top="0"	right ="159"	bottom="31"/>>
+		<frame index="3" left="64"	top="32"	right ="95"	bottom="63"/>>
+		<frame index="4" left="96"	top="32"	right ="127"	bottom="63"/>>
+		<frame index="5" left="128"	top="32"	right ="159"	bottom="63"/>>
+	</sprite>
+	<sprite name ="purplerock" sheet="minesheet" frames="6">
+		<frame index="0" left="64"	top="160"	right ="95"	bottom="191"/>>
+		<frame index="1" left="96"	top="160"	right ="127"	bottom="191"/>>
+		<frame index="2" left="128"	top="160"	right ="159"	bottom="191"/>>
+		<frame index="3" left="64"	top="192"	right ="95"	bottom="223"/>>
+		<frame index="4" left="96"	top="192"	right ="127"	bottom="223"/>>
+		<frame index="5" left="128"	top="192"	right ="159"	bottom="223"/>>
+	</sprite>
+	<sprite name ="silverrock" sheet="minesheet" frames="6">
+		<frame index="0" left="128"	top="0"	right ="159"	bottom="31"/>>
+		<frame index="1" left="160"	top="0"	right ="191"	bottom="31"/>>
+		<frame index="2" left="192"	top="0"	right ="223"	bottom="31"/>>
+		<frame index="3" left="128"	top="32"	right ="159"	bottom="63"/>>
+		<frame index="4" left="160"	top="31"	right ="191"	bottom="62"/>>
+		<frame index="5" left="192"	top="32"	right ="223"	bottom="63"/>>
+	</sprite>
+	<sprite name ="brownrock" sheet="minesheet" frames="6">
+		<frame index="0" left="128"	top="160"	right ="159"	bottom="191"/>>
+		<frame index="1" left="160"	top="160"	right ="191"	bottom="191"/>>
+		<frame index="2" left="192"	top="160"	right ="223"	bottom="191"/>>
+		<frame index="3" left="128"	top="192"	right ="159"	bottom="223"/>>
+		<frame index="4" left="160"	top="192"	right ="191"	bottom="223"/>>
+		<frame index="5" left="192"	top="192"	right ="223"	bottom="223"/>>
+	</sprite>
+	<sprite name ="bluerock" sheet="minesheet" frames="6">
+		<frame index="0" left="224"	top="64"	right ="255"	bottom="95"/>>
+		<frame index="1" left="256"	top="64"	right ="287"	bottom="95"/>>
+		<frame index="2" left="288"	top="64"	right ="319"	bottom="95"/>>
+		<frame index="3" left="224"	top="96"	right ="255"	bottom="127"/>>
+		<frame index="4" left="256"	top="96"	right ="287"	bottom="127"/>>
+		<frame index="5" left="288"	top="96"	right ="319"	bottom="127"/>>
+	</sprite>
+	<sprite name ="greyrock" sheet="minesheet" frames="6">
+		<frame index="0" left="288"	top="64"	right ="319"	bottom="95"/>>
+		<frame index="1" left="320"	top="63"	right ="351"	bottom="94"/>>
+		<frame index="2" left="352"	top="64"	right ="383"	bottom="95"/>>
+		<frame index="3" left="288"	top="96"	right ="319"	bottom="127"/>>
+		<frame index="4" left="320"	top="96"	right ="351"	bottom="127"/>>
+		<frame index="5" left="352"	top="96"	right ="383"	bottom="127"/>>
+	</sprite>
+	<sprite name ="redrock" sheet="minesheet" frames="6">
+		<frame index="0" left="352"	top="64"	right ="383"	bottom="95"/>>
+		<frame index="1" left="384"	top="64"	right ="415"	bottom="95"/>>
+		<frame index="2" left="416"	top="64"	right ="447"	bottom="95"/>>
+		<frame index="3" left="352"	top="96"	right ="383"	bottom="127"/>>
+		<frame index="4" left="384"	top="96"	right ="415"	bottom="127"/>>
+		<frame index="5" left="416"	top="96"	right ="447"	bottom="127"/>>
+	</sprite>
+	<sprite name ="greenrock" sheet="minesheet" frames="6">
+		<frame index="0" left="416"	top="64"	right ="447"	bottom="95"/>>
+		<frame index="1" left="448"	top="64"	right ="479"	bottom="95"/>>
+		<frame index="2" left="480"	top="64"	right ="511"	bottom="95"/>>
+		<frame index="3" left="416"	top="96"	right ="447"	bottom="127"/>>
+		<frame index="4" left="448"	top="96"	right ="479"	bottom="127"/>>
+		<frame index="5" left="480"	top="96"	right ="511"	bottom="127"/>>
+	</sprite>
+	<sprite name ="bigrocks" sheet="minesheet" frames="8">
+		<frame index="0" left="96"	top="64"	right ="159"	bottom="127"/>>
+		<frame index="1" left="96"	top="128"	right ="159"	bottom="191"/>>
+		<frame index="2" left="224"	top="64"	right ="287"	bottom="127"/>>
+		<frame index="3" left="224"	top="128"	right ="287"	bottom="191"/>>
+		<frame index="4" left="288"	top="128"	right ="351"	bottom="191"/>>
+		<frame index="5" left="288"	top="192"	right ="351"	bottom="255"/>>
+		<frame index="6" left="288"	top="256"	right ="351"	bottom="319"/>>
+		<frame index="7" left="288"	top="320"	right ="351"	bottom="383"/>>
+	</sprite>	
+	<sprite name ="blueshard" sheet="minesheet" frames="4">
+		<frame index="0" left="224"	top="0"	right ="255"	bottom="31"/>>
+		<frame index="1" left="256"	top="0"	right ="287"	bottom="31"/>>
+		<frame index="2" left="224"	top="32"	right ="255"	bottom="63"/>>
+		<frame index="3" left="256"	top="32"	right ="287"	bottom="63"/>>
+	</sprite>
+	<sprite name ="greyshard" sheet="minesheet" frames="4">
+		<frame index="0" left="288"	top="0"	right ="319"	bottom="31"/>>
+		<frame index="1" left="320"	top="0"	right ="351"	bottom="31"/>>
+		<frame index="2" left="288"	top="32"	right ="319"	bottom="63"/>>
+		<frame index="3" left="320"	top="32"	right ="351"	bottom="63"/>>
+	</sprite>
+	<sprite name ="redshard" sheet="minesheet" frames="4">
+		<frame index="0" left="352"	top="0"	right ="383"	bottom="31"/>>
+		<frame index="1" left="384"	top="0"	right ="415"	bottom="31"/>>
+		<frame index="2" left="352"	top="32"	right ="383"	bottom="63"/>>
+		<frame index="3" left="384"	top="32"	right ="415"	bottom="63"/>>
+	</sprite>
+	<sprite name ="greenshard" sheet="minesheet" frames="4">
+		<frame index="0" left="416"	top="0"	right ="447"	bottom="31"/>>
+		<frame index="1" left="448"	top="0"	right ="479"	bottom="31"/>>
+		<frame index="2" left="416"	top="32"	right ="447"	bottom="63"/>>
+		<frame index="3" left="448"	top="31"	right ="479"	bottom="62"/>>
+	</sprite>
+	<sprite name ="grass1" sheet="minesheet" frames="8">
+		<frame index="0" left="320"	top="64"	right ="351"	bottom="95"/>>
+		<frame index="1" left="352"	top="64"	right ="383"	bottom="95"/>>
+		<frame index="2" left="320"	top="96"	right ="351"	bottom="127"/>>
+		<frame index="3" left="352"	top="96"	right ="382"	bottom="127"/>>
+		<frame index="4" left="448"	top="64"	right ="479"	bottom="95"/>>
+		<frame index="5" left="480"	top="64"	right ="511"	bottom="95"/>>
+		<frame index="6" left="448"	top="96"	right ="479"	bottom="127"/>>
+		<frame index="7" left="480"	top="96"	right ="511"	bottom="127"/>>
+	</sprite>
+	<sprite name ="grass2" sheet="minesheet" frames="8">
+		<frame index="0" left="320"	top="128"	right ="351"	bottom="159"/>>
+		<frame index="1" left="352"	top="128"	right ="383"	bottom="159"/>>
+		<frame index="2" left="320"	top="160"	right ="351"	bottom="191"/>>
+		<frame index="3" left="352"	top="160"	right ="382"	bottom="191"/>>
+		<frame index="4" left="448"	top="128"	right ="479"	bottom="159"/>>
+		<frame index="5" left="480"	top="128"	right ="511"	bottom="159"/>>
+		<frame index="6" left="448"	top="160"	right ="479"	bottom="191"/>>
+		<frame index="7" left="480"	top="160"	right ="511"	bottom="191"/>>
+	</sprite>
+	<sprite name ="grass3" sheet="minesheet" frames="8">
+		<frame index="0" left="320"	top="192"	right ="351"	bottom="223"/>>
+		<frame index="1" left="352"	top="192"	right ="383"	bottom="223"/>>
+		<frame index="2" left="320"	top="224"	right ="351"	bottom="255"/>>
+		<frame index="3" left="352"	top="224"	right ="382"	bottom="255"/>>
+		<frame index="4" left="448"	top="192"	right ="479"	bottom="223"/>>
+		<frame index="5" left="480"	top="192"	right ="511"	bottom="223"/>>
+		<frame index="6" left="448"	top="224"	right ="479"	bottom="255"/>>
+		<frame index="7" left="480"	top="224"	right ="511"	bottom="255"/>>
+	</sprite>
+	<sprite name ="grass4" sheet="minesheet" frames="8">
+		<frame index="0" left="320"	top="256"	right ="351"	bottom="287"/>>
+		<frame index="1" left="352"	top="256"	right ="383"	bottom="287"/>>
+		<frame index="2" left="320"	top="288"	right ="351"	bottom="319"/>>
+		<frame index="3" left="352"	top="288"	right ="382"	bottom="319"/>>
+		<frame index="4" left="448"	top="256"	right ="479"	bottom="287"/>>
+		<frame index="5" left="480"	top="256"	right ="511"	bottom="287"/>>
+		<frame index="6" left="448"	top="288"	right ="479"	bottom="319"/>>
+		<frame index="7" left="480"	top="288"	right ="511"	bottom="319"/>>
+	</sprite>
+	<sprite name ="tallgrass1" sheet="minesheet" frames="4">
+		<frame index="0" left="384"	top="64"	right ="415"	bottom="127"/>>
+		<frame index="1" left="416"	top="64"	right ="447"	bottom="127"/>>
+		<frame index="2" left="512"	top="64"	right ="543"	bottom="127"/>>
+		<frame index="3" left="544"	top="64"	right ="575"	bottom="127"/>>
+	</sprite>
+	<sprite name ="tallgrass2" sheet="minesheet" frames="4">
+		<frame index="0" left="384"	top="128"	right ="415"	bottom="191"/>>
+		<frame index="1" left="416"	top="128"	right ="447"	bottom="191"/>>
+		<frame index="2" left="512"	top="128"	right ="543"	bottom="191"/>>
+		<frame index="3" left="544"	top="128"	right ="575"	bottom="191"/>>
+	</sprite>
+	<sprite name ="tallgrass3" sheet="minesheet" frames="4">
+		<frame index="0" left="384"	top="192"	right ="415"	bottom="255"/>>
+		<frame index="1" left="416"	top="192"	right ="447"	bottom="255"/>>
+		<frame index="2" left="512"	top="192"	right ="543"	bottom="255"/>>
+		<frame index="3" left="544"	top="192"	right ="575"	bottom="255"/>>
+	</sprite>
+	<sprite name ="tallgrass4" sheet="minesheet" frames="4">
+		<frame index="0" left="384"	top="256"	right ="415"	bottom="319"/>>
+		<frame index="1" left="416"	top="256"	right ="447"	bottom="319"/>>
+		<frame index="2" left="512"	top="256"	right ="543"	bottom="319"/>>
+		<frame index="3" left="544"	top="256"	right ="575"	bottom="319"/>>
+	</sprite>
+	<sprite name ="shrooms" sheet="minesheet" frames="8">
+		<frame index="0" left="352"	top="320"	right ="383"	bottom="351"/>>
+		<frame index="1" left="416"	top="320"	right ="447"	bottom="351"/>>
+		<frame index="2" left="448"	top="320"	right ="479"	bottom="351"/>>
+		<frame index="3" left="480"	top="320"	right ="511"	bottom="351"/>>
+		<frame index="4" left="352"	top="352"	right ="383"	bottom="384"/>>
+		<frame index="5" left="384"	top="352"	right ="415"	bottom="384"/>>
+		<frame index="6" left="416"	top="352"	right ="447"	bottom="384"/>>
+		<frame index="7" left="480"	top="352"	right ="511"	bottom="384"/>>
+	</sprite>
+
+	<!-- END Mine decor -->
+
+	<!-- Player Character -->
+
+	<sprite name="sdashdown" sheet="hero_sprite_sheet" left="469"   top="52" right="536"  bottom="104"/> 
+	<sprite name="sdashright" sheet="hero_sprite_sheet" left="268"   top="104" right="335"  bottom="156"/> 
+	<sprite name="sdashleft" sheet="hero_sprite_sheet" left="67"   top="156" right="134"  bottom="208"/> 
+	<sprite name="sdashup" sheet="hero_sprite_sheet" left="469"  top="156" right="536"  bottom="208"/> 
+
+	<sprite name="idledownsheet" file="hero_sprite_sheet.png"/>
+    <sprite name="idledown" sheet="idledownsheet" frames="4">
+      <frame index="0" left="0"   top="0" right="67"  bottom="52"/>>
+      <frame index="1" left="67"  top="0" right="134" bottom="52"/>>
+      <frame index="2" left="134" top="0" right="201" bottom="52"/>>
+      <frame index="3" left="201" top="0" right="268" bottom="52"/>>
+    </sprite>
+
+	<sprite name="idlerightsheet" file="hero_sprite_sheet.png"/>
+    <sprite name="idleright" sheet="idlerightsheet" frames="4">
+      <frame index="0" left="268"  top="0" right="335" bottom="52"/>>
+      <frame index="1" left="335" top="0" right="402" bottom="52"/>>
+      <frame index="2" left="402" top="0" right="469" bottom="52"/>>
+	  <frame index="3" left="469"   top="0" right="536"  bottom="52"/>>
+    </sprite>
+
+	<sprite name="idleleftsheet" file="hero_sprite_sheet.png"/>
+    <sprite name="idleleft" sheet="idleleftsheet" frames="4">
+      <frame index="0" left="536"   top="0" right="603"  bottom="52"/>>
+      <frame index="1" left="0"  top="52" right="67" bottom="104"/>>
+      <frame index="2" left="67" top="52" right="134" bottom="104"/>>
+      <frame index="3" left="134" top="52" right="201" bottom="104"/>>
+    </sprite>
+
+	<sprite name="idleupsheet" file="hero_sprite_sheet.png"/>
+    <sprite name="idleup" sheet="idleupsheet" frames="4">
+      <frame index="0" left="201"   top="52" right="268"  bottom="104"/>>
+      <frame index="1" left="268"  top="52" right="335" bottom="104"/>>
+      <frame index="2" left="335" top="52" right="402" bottom="104"/>>
+      <frame index="3" left="402" top="52" right="469" bottom="104"/>>
+    </sprite>
+
+	<sprite name="rundownsheet" file="hero_sprite_sheet.png"/>
+    <sprite name="rundown" sheet="rundownsheet" frames="6">
+      <frame index="0" left="469"   top="52" right="536"  bottom="104"/>>
+      <frame index="1" left="536"  top="52" right="603" bottom="104"/>>
+      <frame index="2" left="0" top="104" right="67" bottom="156"/>>
+      <frame index="3" left="67" top="104" right="134" bottom="156"/>>
+	  <frame index="4" left="134" top="104" right="201" bottom="156"/>>
+      <frame index="5" left="201" top="104" right="268" bottom="156"/>>
+    </sprite>
+
+    <sprite name="runrightsheet" file="hero_sprite_sheet.png"/>
+    <sprite name="runright" sheet="runrightsheet" frames="6">
+      <frame index="0" left="268"   top="104" right="335"  bottom="156"/>>
+      <frame index="1" left="335"  top="104" right="402" bottom="156"/>>
+      <frame index="2" left="402" top="104" right="469" bottom="156"/>>
+      <frame index="3" left="469" top="104" right="536" bottom="156"/>>
+	  <frame index="4" left="536" top="104" right="603" bottom="156"/>>
+      <frame index="5" left="0" top="156" right="67" bottom="208"/>>
+    </sprite>
+
+	<sprite name="runleftsheet" file="hero_sprite_sheet.png"/>
+    <sprite name="runleft" sheet="runleftsheet" frames="6">
+      <frame index="0" left="67"   top="156" right="134"  bottom="208"/>>
+      <frame index="1" left="134"  top="156" right="201" bottom="208"/>>
+      <frame index="2" left="201" top="156" right="268" bottom="208"/>>
+      <frame index="3" left="268" top="156" right="335" bottom="208"/>>
+	  <frame index="4" left="335" top="156" right="402" bottom="208"/>>
+      <frame index="5" left="402" top="156" right="469" bottom="208"/>>
+    </sprite>
+
+	<sprite name="runupsheet" file="hero_sprite_sheet.png"/>
+    <sprite name="runup" sheet="runupsheet" frames="6">
+      <frame index="0" left="469"  top="156" right="536"  bottom="208"/>>
+      <frame index="1" left="536"  top="156" right="603" bottom="208"/>>
+      <frame index="2" left="0" top="208" right="67" bottom="260"/>>
+      <frame index="3" left="67" top="208" right="134" bottom="260"/>>
+	  <frame index="4" left="134" top="208" right="201" bottom="260"/>>
+      <frame index="5" left="201" top="208" right="268" bottom="260"/>>
+    </sprite>
+
+	<sprite name="trundownsheet" file="hero_sprite_sheet.png"/>
+    <sprite name="trundown" sheet="trundownsheet" frames="6">
+      <frame index="0" left="469"   top="52" right="536"  bottom="104"/>>
+      <frame index="1" left="536"  top="52" right="603" bottom="104"/>>
+      <frame index="2" left="0" top="104" right="67" bottom="156"/>>
+      <frame index="3" left="67" top="104" right="134" bottom="156"/>>
+	  <frame index="4" left="134" top="104" right="201" bottom="156"/>>
+      <frame index="5" left="201" top="104" right="268" bottom="156"/>>
+    </sprite>
+
+	<sprite name="trunrightsheet" file="hero_sprite_sheet.png"/>
+    <sprite name="trunright" sheet="trunrightsheet" frames="6">
+      <frame index="0" left="268"   top="104" right="335"  bottom="156"/>>
+      <frame index="1" left="335"  top="104" right="402" bottom="156"/>>
+      <frame index="2" left="402" top="104" right="469" bottom="156"/>>
+      <frame index="3" left="469" top="104" right="536" bottom="156"/>>
+	  <frame index="4" left="536" top="104" right="603" bottom="156"/>>
+      <frame index="5" left="0" top="156" right="67" bottom="208"/>>
+    </sprite>
+
+	<sprite name="trunleftsheet" file="hero_sprite_sheet.png"/>
+    <sprite name="trunleft" sheet="trunleftsheet" frames="6">
+      <frame index="0" left="67"   top="156" right="134"  bottom="208"/>>
+      <frame index="1" left="134"  top="156" right="201" bottom="208"/>>
+      <frame index="2" left="201" top="156" right="268" bottom="208"/>>
+      <frame index="3" left="268" top="156" right="335" bottom="208"/>>
+	  <frame index="4" left="335" top="156" right="402" bottom="208"/>>
+      <frame index="5" left="402" top="156" right="469" bottom="208"/>>
+    </sprite>
+
+	<sprite name="trunupsheet" file="hero_sprite_sheet.png"/>
+    <sprite name="trunup" sheet="trunupsheet" frames="6">
+      <frame index="0" left="469"  top="156" right="536"  bottom="208"/>>
+      <frame index="1" left="536"  top="156" right="603" bottom="208"/>>
+      <frame index="2" left="0" top="208" right="67" bottom="260"/>>
+      <frame index="3" left="67" top="208" right="134" bottom="260"/>>
+	  <frame index="4" left="134" top="208" right="201" bottom="260"/>>
+      <frame index="5" left="201" top="208" right="268" bottom="260"/>>
+    </sprite>
+
+	<sprite name="attackrightsheet" file="hero_sprite_sheet.png"/>
+    <sprite name="attackright" sheet="attackrightsheet" frames="5">
+      <frame index="0" left="268"  top="208" right="335"  bottom="260"/>>
+      <frame index="1" left="335"  top="208" right="402" bottom="260"/>>
+      <frame index="2" left="402" top="208" right="469" bottom="260"/>>
+      <frame index="3" left="469" top="208" right="536" bottom="260"/>>
+	  <frame index="4" left="536" top="208" right="603" bottom="260"/>>
+    </sprite>
+
+	<sprite name="attackleftsheet" file="hero_sprite_sheet.png"/>
+    <sprite name="attackleft" sheet="attackleftsheet" frames="5">
+      <frame index="0" left="0"  top="260" right="67"  bottom="312"/>>
+      <frame index="1" left="67"  top="260" right="134" bottom="312"/>>
+      <frame index="2" left="134" top="260" right="201" bottom="312"/>>
+      <frame index="3" left="201" top="260" right="268" bottom="312"/>>
+	  <frame index="4" left="268" top="260" right="335" bottom="312"/>>
+    </sprite>
+
+	<sprite name="attackdownsheet" file="hero_sprite_sheet.png"/>
+    <sprite name="attackdown" sheet="attackdownsheet" frames="5">
+      <frame index="0" left="335"  top="260" right="402"  bottom="312"/>>
+      <frame index="1" left="402"  top="260" right="469" bottom="312"/>>
+      <frame index="2" left="469" top="260" right="536" bottom="312"/>>
+      <frame index="3" left="536" top="260" right="603" bottom="312"/>>
+	  <frame index="4" left="0" top="312" right="67" bottom="364"/>>
+    </sprite>
+
+	<sprite name="attackupsheet" file="hero_sprite_sheet.png"/>
+    <sprite name="attackup" sheet="attackupsheet" frames="5">
+      <frame index="0" left="67"  top="312" right="134"  bottom="364"/>>
+      <frame index="1" left="134"  top="312" right="201" bottom="364"/>>
+      <frame index="2" left="201" top="312" right="268" bottom="364"/>>
+      <frame index="3" left="268" top="312" right="335" bottom="364"/>>
+	  <frame index="4" left="335" top="312" right="402" bottom="364"/>>
+    </sprite>
+
+	<sprite name="hitdownsheet" file="hero_sprite_sheet.png"/>
+    <sprite name="hitdown" sheet="hitdownsheet" frames="3">
+      <frame index="0" left="402"  top="312" right="469"  bottom="364"/>>
+      <frame index="1" left="469"  top="312" right="536" bottom="364"/>>
+      <frame index="2" left="536" top="312" right="603" bottom="364"/>>
+    </sprite>
+
+	<sprite name="hitrightsheet" file="hero_sprite_sheet.png"/>
+    <sprite name="hitright" sheet="hitrightsheet" frames="3">
+      <frame index="0" left="0"  top="364" right="67"  bottom="416"/>>
+      <frame index="1" left="67"  top="364" right="134" bottom="416"/>>
+      <frame index="2" left="134" top="364" right="201" bottom="416"/>>
+    </sprite>
+
+	<sprite name="hitleftsheet" file="hero_sprite_sheet.png"/>
+    <sprite name="hitleft" sheet="hitleftsheet" frames="3">
+      <frame index="0" left="201"  top="364" right="268"  bottom="416"/>>
+      <frame index="1" left="268"  top="364" right="335" bottom="416"/>>
+      <frame index="2" left="335" top="364" right="402" bottom="416"/>>
+    </sprite>
+
+	<sprite name="hitupsheet" file="hero_sprite_sheet.png"/>
+    <sprite name="hitup" sheet="hitupsheet" frames="3">
+      <frame index="0" left="402"  top="364" right="469"  bottom="416"/>>
+      <frame index="1" left="469"  top="364" right="536" bottom="416"/>>
+      <frame index="2" left="536" top="364" right="603" bottom="416"/>>
+    </sprite>
+
+	<sprite name="deathupsheet" file="hero_sprite_sheet.png"/>
+    <sprite name="deathup" sheet="deathupsheet" frames="19">
+	  <frame index="0" left="0"  top="416" right="67"  bottom="468"/>>
+      <frame index="1" left="67"  top="416" right="134" bottom="468"/>>
+      <frame index="2" left="134" top="416" right="201" bottom="468"/>>
+	  <frame index="3" left="201"  top="416" right="268"  bottom="468"/>>
+      <frame index="4" left="268"  top="416" right="335" bottom="468"/>>
+      <frame index="5" left="335" top="416" right="402" bottom="468"/>>
+      <frame index="6" left="402"  top="416" right="469"  bottom="468"/>>
+      <frame index="7" left="469"  top="416" right="536" bottom="468"/>>
+      <frame index="8" left="536" top="416" right="603" bottom="468"/>>
+	  <frame index="9" left="536" top="416" right="603" bottom="468"/>>
+	  <frame index="10" left="536" top="416" right="603" bottom="468"/>>
+	  <frame index="11" left="536" top="416" right="603" bottom="468"/>>
+	  <frame index="12" left="536" top="416" right="603" bottom="468"/>>
+	  <frame index="13" left="536" top="416" right="603" bottom="468"/>>
+	  <frame index="14" left="536" top="416" right="603" bottom="468"/>>
+	  <frame index="15" left="536" top="416" right="603" bottom="468"/>>
+	  <frame index="16" left="536" top="416" right="603" bottom="468"/>>
+	  <frame index="17" left="536" top="416" right="603" bottom="468"/>>
+	  <frame index="18" left="536" top="416" right="603" bottom="468"/>>
+    </sprite>
+
+	<sprite name="deathdownsheet" file="hero_sprite_sheet.png"/>
+    <sprite name="deathdown" sheet="deathdownsheet" frames="19">
+	  <frame index="0" left="0"  top="468" right="67"  bottom="520"/>>
+      <frame index="1" left="67"  top="468" right="134" bottom="520"/>>
+      <frame index="2" left="134" top="468" right="201" bottom="520"/>>
+	  <frame index="3" left="201"  top="468" right="268"  bottom="520"/>>
+      <frame index="4" left="268"  top="468" right="335" bottom="520"/>>
+      <frame index="5" left="335" top="468" right="402" bottom="520"/>>
+      <frame index="6" left="402"  top="468" right="469"  bottom="520"/>>
+      <frame index="7" left="469"  top="468" right="536" bottom="520"/>>
+      <frame index="8" left="536" top="468" right="603" bottom="520"/>>
+	  <frame index="9" left="536" top="468" right="603" bottom="520"/>>
+	  <frame index="10" left="536" top="468" right="603" bottom="520"/>>
+	  <frame index="11" left="536" top="468" right="603" bottom="520"/>>
+	  <frame index="12" left="536" top="468" right="603" bottom="520"/>>
+	  <frame index="13" left="536" top="468" right="603" bottom="520"/>>
+	  <frame index="14" left="536" top="468" right="603" bottom="520"/>>
+	  <frame index="15" left="536" top="468" right="603" bottom="520"/>>
+	  <frame index="16" left="536" top="468" right="603" bottom="520"/>>
+	  <frame index="17" left="536" top="468" right="603" bottom="520"/>>
+	  <frame index="18" left="536" top="468" right="603" bottom="520"/>>
+    </sprite>
+
+	<sprite name="deathrightsheet" file="hero_sprite_sheet.png"/>
+    <sprite name="deathright" sheet="deathrightsheet" frames="19">
+	  <frame index="0" left="0"  top="520" right="67"  bottom="572"/>>
+      <frame index="1" left="67"  top="520" right="134" bottom="572"/>>
+      <frame index="2" left="134" top="520" right="201" bottom="572"/>>
+	  <frame index="3" left="201"  top="520" right="268"  bottom="572"/>>
+      <frame index="4" left="268"  top="520" right="335" bottom="572"/>>
+      <frame index="5" left="335" top="520" right="402" bottom="572"/>>
+      <frame index="6" left="402"  top="520" right="469"  bottom="572"/>>
+      <frame index="7" left="469"  top="520" right="536" bottom="572"/>>
+      <frame index="8" left="536" top="520" right="603" bottom="572"/>>
+	  <frame index="9" left="536" top="520" right="603" bottom="572"/>>
+	  <frame index="10" left="536" top="520" right="603" bottom="572"/>>
+	  <frame index="11" left="536" top="520" right="603" bottom="572"/>>
+	  <frame index="12" left="536" top="520" right="603" bottom="572"/>>
+	  <frame index="13" left="536" top="520" right="603" bottom="572"/>>
+	  <frame index="14" left="536" top="520" right="603" bottom="572"/>>
+	  <frame index="15" left="536" top="520" right="603" bottom="572"/>>
+	  <frame index="16" left="536" top="520" right="603" bottom="572"/>>
+	  <frame index="17" left="536" top="520" right="603" bottom="572"/>>
+	  <frame index="18" left="536" top="520" right="603" bottom="572"/>>
+    </sprite>
+
+	<sprite name="deathleftsheet" file="hero_sprite_sheet.png"/>
+    <sprite name="deathleft" sheet="deathleftsheet" frames="19">
+	  <frame index="0" left="0"  top="572" right="67"  bottom="624"/>>
+      <frame index="1" left="67"  top="572" right="134" bottom="624"/>>
+      <frame index="2" left="134" top="572" right="201" bottom="624"/>>
+	  <frame index="3" left="201"  top="572" right="268"  bottom="624"/>>
+      <frame index="4" left="268"  top="572" right="335" bottom="624"/>>
+      <frame index="5" left="335" top="572" right="402" bottom="624"/>>
+      <frame index="6" left="402"  top="572" right="469"  bottom="624"/>>
+      <frame index="7" left="469"  top="572" right="536" bottom="624"/>>
+      <frame index="8" left="536" top="572" right="603" bottom="624"/>>
+	  <frame index="9" left="536" top="572" right="603" bottom="624"/>>
+	  <frame index="10" left="536" top="572" right="603" bottom="624"/>>
+	  <frame index="11" left="536" top="572" right="603" bottom="624"/>>
+	  <frame index="12" left="536" top="572" right="603" bottom="624"/>>
+	  <frame index="13" left="536" top="572" right="603" bottom="624"/>>
+	  <frame index="14" left="536" top="572" right="603" bottom="624"/>>
+	  <frame index="15" left="536" top="572" right="603" bottom="624"/>>
+	  <frame index="16" left="536" top="572" right="603" bottom="624"/>>
+	  <frame index="17" left="536" top="572" right="603" bottom="624"/>>
+	  <frame index="18" left="536" top="572" right="603" bottom="624"/>> 
+    </sprite>
+
+	<!-- END Player Character -->
+
+	<!-- START Rabite Enemy-->
+
+	<sprite name="rabitehopdownsheet" file="rabite.png"/>
+    <sprite name="rabitehopdown" sheet="rabitehopdownsheet" frames="5">
+      <frame index="0" left="0"   top="0" right="64"  bottom="64"/>>
+      <frame index="1" left="64"  top="0" right="128" bottom="64"/>>
+      <frame index="2" left="128" top="0" right="192" bottom="64"/>>
+      <frame index="3" left="192" top="0" right="256" bottom="64"/>>
+	  <frame index="4" left="256" top="0" right="320" bottom="64"/>>
+    </sprite>
+
+	<sprite name="rabitehopupsheet" file="rabite.png"/>
+    <sprite name="rabitehopup" sheet="rabitehopupsheet" frames="5">
+      <frame index="0" left="320"   top="0" right="384"  bottom="64"/>>
+      <frame index="1" left="384"  top="0" right="448" bottom="64"/>>
+      <frame index="2" left="448" top="0" right="512" bottom="64"/>>
+      <frame index="3" left="0" top="64" right="64" bottom="128"/>>
+	  <frame index="4" left="64" top="64" right="128" bottom="128"/>>
+    </sprite>
+
+	<sprite name="rabitehopleftsheet" file="rabite.png"/>
+    <sprite name="rabitehopleft" sheet="rabitehopleftsheet" frames="5">
+      <frame index="0" left="128"   top="64" right="192"  bottom="128"/>>
+      <frame index="1" left="192"  top="64" right="256" bottom="128"/>>
+      <frame index="2" left="256" top="64" right="320" bottom="128"/>>
+      <frame index="3" left="320" top="64" right="384" bottom="128"/>>
+	  <frame index="4" left="384" top="64" right="448" bottom="128"/>>
+    </sprite>
+
+	<sprite name="rabitebitedownsheet" file="rabite.png"/>
+    <sprite name="rabitebitedown" sheet="rabitebitedownsheet" frames="6">
+      <frame index="0" left="448"  top="64" right="512" bottom="128"/>>
+      <frame index="1" left="0" top="128" right="64" bottom="192"/>>
+      <frame index="2" left="64" top="128" right="128" bottom="192"/>>
+	  <frame index="3" left="128" top="128" right="192" bottom="192"/>>
+	  <frame index="4" left="192" top="128" right="256" bottom="192"/>>
+	  <frame index="5" left="256" top="128" right="320" bottom="192"/>>
+    </sprite>
+
+	<sprite name="rabitebiteupsheet" file="rabite.png"/>
+    <sprite name="rabitebiteup" sheet="rabitebiteupsheet" frames="6">
+      <frame index="0" left="320"  top="128" right="384" bottom="192"/>>
+      <frame index="1" left="384" top="128" right="448" bottom="192"/>>
+      <frame index="2" left="448" top="128" right="512" bottom="192"/>>
+	  <frame index="3" left="0" top="192" right="64" bottom="256"/>>
+	  <frame index="4" left="64" top="192" right="128" bottom="256"/>>
+	  <frame index="5" left="128" top="192" right="192" bottom="256"/>>
+    </sprite>
+
+	<sprite name="rabitebiteleftsheet" file="rabite.png"/>
+    <sprite name="rabitebiteleft" sheet="rabitebiteleftsheet" frames="6">
+      <frame index="0" left="192"  top="192" right="256" bottom="256"/>>
+      <frame index="1" left="256" top="192" right="320" bottom="256"/>>
+      <frame index="2" left="320" top="192" right="384" bottom="256"/>>
+	  <frame index="4" left="384" top="192" right="448" bottom="256"/>>
+	  <frame index="4" left="448" top="192" right="512" bottom="256"/>>
+	  <frame index="5" left="0" top="256" right="64" bottom="320"/>>
+    </sprite>
+
+	<sprite name="rabitedeathsheet" file="rabite.png"/>
+    <sprite name="rabitedeath" sheet="rabitedeathsheet" frames="7">
+      <frame index="0" left="64"   top="256" right="128"  bottom="320"/>>
+      <frame index="1" left="128"  top="256" right="192" bottom="320"/>>
+      <frame index="2" left="192" top="256" right="256" bottom="320"/>>
+      <frame index="3" left="256" top="256" right="320" bottom="320"/>>
+	  <frame index="4" left="320" top="256" right="384" bottom="320"/>>
+	  <frame index="5" left="384" top="256" right="448" bottom="320"/>>
+	  <frame index="6" left="448" top="256" right="512" bottom="320"/>>
+    </sprite>
+
+	<sprite name="rabitehoprightsheet" file="rabite.png"/>
+    <sprite name="rabitehopright" sheet="rabitehoprightsheet" frames="5">
+      <frame index="0" left="0"   top="320" right="64"  bottom="384"/>>
+      <frame index="1" left="64"  top="320" right="128" bottom="384"/>>
+      <frame index="2" left="128" top="320" right="192" bottom="384"/>>
+      <frame index="3" left="192" top="320" right="256" bottom="384"/>>
+	  <frame index="4" left="256" top="320" right="320" bottom="384"/>>
+    </sprite>
+
+	<sprite name="rabitebiterightsheet" file="rabite.png"/>
+    <sprite name="rabitebiteright" sheet="rabitebiterightsheet" frames="6">
+      <frame index="0" left="320"   top="320" right="384"  bottom="384"/>>
+      <frame index="1" left="384"  top="320" right="448" bottom="384"/>>
+      <frame index="2" left="448" top="320" right="512" bottom="384"/>>
+      <frame index="3" left="0" top="384" right="64" bottom="448"/>>
+	  <frame index="4" left="64" top="384" right="128" bottom="448"/>>
+	  <frame index="4" left="128" top="384" right="192" bottom="448"/>>
+    </sprite>
+
+	<sprite name="rabitehurtdownsheet" file="rabite.png"/>
+    <sprite name="rabitehurtdown" sheet="rabitehurtdownsheet" frames="2">
+      <frame index="0" left="192"   top="384" right="256"  bottom="448"/>>
+      <frame index="1" left="256"  top="384" right="320" bottom="448"/>>
+    </sprite>
+
+	<sprite name="rabitehurtupsheet" file="rabite.png"/>
+    <sprite name="rabitehurtup" sheet="rabitehurtupsheet" frames="2">
+      <frame index="0" left="320"   top="384" right="384"  bottom="448"/>>
+      <frame index="1" left="384"  top="384" right="448" bottom="448"/>>
+    </sprite>
+
+	<sprite name="rabitehurtleftsheet" file="rabite.png"/>
+    <sprite name="rabitehurtleft" sheet="rabiteidleleftsheet" frames="2">
+      <frame index="0" left="448"   top="384" right="512"  bottom="448"/>>
+      <frame index="1" left="0"  top="448" right="64" bottom="512"/>>
+    </sprite>
+
+	<sprite name="rabitehurtrightsheet" file="rabite.png"/>
+    <sprite name="rabitehurtright" sheet="rabitehurtrightsheet" frames="2">
+      <frame index="0" left="64"   top="448" right="128"  bottom="512"/>>
+      <frame index="1" left="128"  top="448" right="192" bottom="512"/>>
+    </sprite>
+
+	<sprite name="rabiteidledownsheet" file="rabite.png"/>
+    <sprite name="rabiteidledown" sheet="rabiteidledownsheet" frames="2">
+      <frame index="0" left="0"   top="0" right="64"  bottom="64"/>>
+      <frame index="1" left="192"  top="448" right="256" bottom="512"/>>
+    </sprite>
+
+	<sprite name="rabiteidleupsheet" file="rabite.png"/>
+    <sprite name="rabiteidleup" sheet="rabiteidleupsheet" frames="2">
+      <frame index="0" left="320"   top="0" right="384"  bottom="64"/>>
+      <frame index="1" left="256"  top="448" right="320" bottom="512"/>>
+    </sprite>
+
+	<sprite name="rabiteidleleftsheet" file="rabite.png"/>
+    <sprite name="rabiteidleleft" sheet="rabiteidleleftsheet" frames="2">
+      <frame index="0" left="128"   top="64" right="192"  bottom="128"/>>
+      <frame index="1" left="320"  top="448" right="384" bottom="512"/>>
+    </sprite>
+
+	<sprite name="rabiteidlerightsheet" file="rabite.png"/>
+    <sprite name="rabiteidleright" sheet="rabiteidlerightsheet" frames="2">
+      <frame index="0" left="0"   top="320" right="64"  bottom="384"/>>
+      <frame index="1" left="384"  top="448" right="448" bottom="512"/>>
+    </sprite>
+
+	<!-- END Rabite Enemy-->
+
+	<!-- START OakSeed Enemey-->
+
+	<sprite name="oakseeddeathsheet" file="oakseed.png"/>
+    <sprite name="oakseeddeath" sheet="oakseeddeathsheet" frames="18">
+      <frame index="0" left="256"   top="64" right="320"  bottom="128"/>>
+      <frame index="1" left="320"  top="64" right="384" bottom="128"/>>
+      <frame index="2" left="384" top="64" right="448" bottom="128"/>>
+      <frame index="3" left="448" top="64" right="512" bottom="128"/>>
+	  <frame index="4" left="512" top="64" right="576" bottom="128"/>>
+	  <frame index="5" left="576" top="64" right="640" bottom="128"/>>
+	  <frame index="6" left="640"   top="64" right="704"  bottom="128"/>>
+      <frame index="7" left="704"  top="64" right="768" bottom="128"/>>
+      <frame index="8" left="0" top="128" right="64" bottom="192"/>>
+      <frame index="9" left="64" top="128" right="128" bottom="192"/>>
+	  <frame index="10" left="128" top="128" right="192" bottom="192"/>>
+	  <frame index="11" left="192" top="128" right="256" bottom="192"/>>
+	  <frame index="12" left="256"   top="128" right="320"  bottom="192"/>>
+      <frame index="13" left="320"  top="128" right="384" bottom="192"/>>
+      <frame index="14" left="384" top="128" right="448" bottom="192"/>>
+      <frame index="15" left="448" top="128" right="512" bottom="192"/>>
+	  <frame index="16" left="512" top="128" right="576" bottom="192"/>>
+	  <frame index="17" left="576" top="128" right="640" bottom="192"/>>
+    </sprite>
+
+	<sprite name="oakseedidledownsheet" file="oakseed.png"/>
+    <sprite name="oakseedidledown" sheet="oakseedidledownsheet" frames="6">
+      <frame index="0" left="704"   top="128" right="768"  bottom="192"/>>
+      <frame index="1" left="0"  top="192" right="64" bottom="256"/>>
+      <frame index="2" left="64" top="192" right="128" bottom="256"/>>
+      <frame index="3" left="128" top="192" right="192" bottom="256"/>>
+	  <frame index="4" left="192" top="192" right="256" bottom="256"/>>
+	  <frame index="5" left="256" top="192" right="320" bottom="256"/>>
+    </sprite>
+
+	<sprite name="oakseedwalkdownsheet" file="oakseed.png"/>
+    <sprite name="oakseedwalkdown" sheet="oakseedwalkdownsheet" frames="7">
+      <frame index="0" left="320"   top="192" right="384"  bottom="256"/>>
+      <frame index="1" left="384"  top="192" right="448" bottom="256"/>>
+      <frame index="2" left="448" top="192" right="512" bottom="256"/>>
+      <frame index="3" left="512" top="192" right="576" bottom="256"/>>
+	  <frame index="4" left="576" top="192" right="640" bottom="256"/>>
+	  <frame index="5" left="640" top="192" right="704" bottom="256"/>>
+	  <frame index="6" left="704" top="192" right="768" bottom="256"/>>
+    </sprite>
+
+	<sprite name="oakseedidleleftsheet" file="oakseed.png"/>
+    <sprite name="oakseedidleleft" sheet="oakseedidleleftsheet" frames="6">
+      <frame index="0" left="640"   top="256" right="704"  bottom="320"/>>
+      <frame index="1" left="704"  top="256" right="768" bottom="320"/>>
+      <frame index="2" left="0" top="320" right="64" bottom="386"/>>
+      <frame index="3" left="64" top="320" right="128" bottom="386"/>>
+	  <frame index="4" left="128" top="320" right="192" bottom="386"/>>
+	  <frame index="5" left="192" top="320" right="256" bottom="386"/>>
+    </sprite>
+
+	<sprite name="oakseedwalkleftsheet" file="oakseed.png"/>
+    <sprite name="oakseedwalkleft" sheet="oakseedwalkleftsheet" frames="7">
+      <frame index="0" left="256"   top="320" right="320"  bottom="386"/>>
+      <frame index="1" left="320"  top="320" right="384" bottom="386"/>>
+      <frame index="2" left="384" top="320" right="448" bottom="386"/>>
+      <frame index="3" left="448" top="320" right="512" bottom="386"/>>
+	  <frame index="4" left="512" top="320" right="576" bottom="386"/>>
+	  <frame index="5" left="576" top="320" right="640" bottom="386"/>>
+	  <frame index="6" left="640" top="320" right="704" bottom="386"/>>
+    </sprite>
+
+	<sprite name="oakseedidlerightsheet" file="oakseed.png"/>
+    <sprite name="oakseedidleright" sheet="oakseedidlerightsheet" frames="6">
+      <frame index="0" left="640"   top="386" right="704"  bottom="448"/>>
+      <frame index="1" left="704"  top="386" right="768" bottom="448"/>>
+      <frame index="2" left="0" top="448" right="64" bottom="512"/>>
+      <frame index="3" left="64" top="448" right="128" bottom="512"/>>
+	  <frame index="4" left="128" top="448" right="192" bottom="512"/>>
+	  <frame index="5" left="192" top="448" right="256" bottom="512"/>>
+    </sprite>
+
+	<sprite name="oakseedwalkrightsheet" file="oakseed.png"/>
+    <sprite name="oakseedwalkright" sheet="oakseedwalkrightsheet" frames="7">
+      <frame index="0" left="256"   top="448" right="320"  bottom="512"/>>
+      <frame index="1" left="320"  top="448" right="384" bottom="512"/>>
+      <frame index="2" left="384" top="448" right="448" bottom="512"/>>
+      <frame index="3" left="448" top="448" right="512" bottom="512"/>>
+	  <frame index="4" left="512" top="448" right="576" bottom="512"/>>
+	  <frame index="5" left="576" top="448" right="640" bottom="512"/>>
+	  <frame index="6" left="640" top="448" right="704" bottom="512"/>>
+    </sprite>
+
+	<sprite name="oakseedidleupsheet" file="oakseed.png"/>
+    <sprite name="oakseedidleup" sheet="oakseedidleupsheet" frames="6">
+      <frame index="0" left="640"   top="512" right="704"  bottom="576"/>>
+      <frame index="1" left="704"  top="512" right="768" bottom="576"/>>
+      <frame index="2" left="0" top="576" right="64" bottom="640"/>>
+      <frame index="3" left="64" top="576" right="128" bottom="640"/>>
+	  <frame index="4" left="128" top="576" right="192" bottom="640"/>>
+	  <frame index="5" left="192" top="576" right="256" bottom="640"/>>
+    </sprite>
+
+	<sprite name="oakseedwalkupsheet" file="oakseed.png"/>
+    <sprite name="oakseedwalkup" sheet="oakseedwalkupsheet" frames="7">
+      <frame index="0" left="256"   top="576" right="320"  bottom="640"/>>
+      <frame index="1" left="320"  top="576" right="384" bottom="640"/>>
+      <frame index="2" left="384" top="576" right="448" bottom="640"/>>
+      <frame index="3" left="448" top="576" right="512" bottom="640"/>>
+	  <frame index="4" left="512" top="576" right="576" bottom="640"/>>
+	  <frame index="5" left="576" top="576" right="640" bottom="640"/>>
+	  <frame index="6" left="640" top="576" right="704" bottom="640"/>>
+    </sprite>
+
+	<sprite name="oakseedhurtdownsheet" file="oakseed.png"/>
+    <sprite name="oakseedhurtdown" sheet="oakseedhurtdownsheet" frames="3">
+      <frame index="0" left="640"   top="128" right="704"  bottom="192"/>>
+      <frame index="1" left="704"   top="128" right="768"  bottom="192"/>>
+	  <frame index="2" left="640"   top="128" right="704"  bottom="192"/>>
+    </sprite>
+
+	<sprite name="oakseedhurtleftsheet" file="oakseed.png"/>
+    <sprite name="oakseedhurtleft" sheet="oakseedhurtleftsheet" frames="3">
+      <frame index="0" left="576"   top="256" right="640"  bottom="320"/>>
+      <frame index="1" left="576"  top="256" right="640" bottom="320"/>>
+	  <frame index="2" left="576"  top="256" right="640" bottom="320"/>>
+    </sprite>
+
+	<sprite name="oakseedhurtrightsheet" file="oakseed.png"/>
+    <sprite name="oakseedhurtright" sheet="oakseedhurtrightsheet" frames="3">
+      <frame index="0" left="576"   top="448" right="640"  bottom="512"/>>
+      <frame index="1" left="576"  top="448" right="640" bottom="512"/>>
+	  <frame index="2" left="576"  top="448" right="640" bottom="512"/>>
+    </sprite>
+
+	<sprite name="oakseedhurtupsheet" file="oakseed.png"/>
+    <sprite name="oakseedhurtup" sheet="oakseedhurtupsheet" frames="3">
+      <frame index="0" left="576"   top="576" right="640"  bottom="640"/>>
+      <frame index="1" left="576"  top="576" right="640" bottom="640"/>>
+	  <frame index="2" left="576"  top="576" right="640" bottom="640"/>>
+    </sprite>
+
+	<!-- END OakSeed Enemey-->
+
+    <sprite name="slime" file="slime.png"/>
+	<sprite name="slimeidle" sheet="slime" frames="4">
+	  <frame index="0" left="0"	top="16"	right ="31"	bottom="31"/>>
+	  <frame index="1" left="32"	top="16"	right ="63"	bottom="31"/>>
+	  <frame index="2" left="64"	top="16"	right ="95"	bottom="31"/>>
+	  <frame index="3" left="96"	top="16"	right ="127"	bottom="31"/>>
+	</sprite>
+	<sprite name ="hop" sheet="slime" frames="8">
+		<frame index="0" left="0"	top="48"	right ="31"	bottom="63"/>>
+		<frame index="1" left="32"	top="48"	right ="63"	bottom="63"/>>
+		<frame index="2" left="64"	top="48"	right ="95"	bottom="63"/>>
+		<frame index="3" left="96"	top="48"	right ="127"	bottom="63"/>>
+		<frame index="4" left="128"	top="48"	right ="159"	bottom="63"/>>
+		<frame index="5" left="160"	top="48"	right ="191"	bottom="63"/>>
+		<frame index="6" left="192"	top="48"	right ="223"	bottom="63"/>>
+		<frame index="7" left="224"	top="48"	right ="255"	bottom="63"/>>
+	</sprite>
+	<sprite name ="tentacle" sheet="slime" frames="8">
+		<frame index="0" left="0"	top="64"	right ="31"	bottom="95"/>>
+		<frame index="1" left="32"	top="64"	right ="63"	bottom="95"/>>
+		<frame index="2" left="64"	top="64"	right ="95"	bottom="95"/>>
+		<frame index="3" left="96"	top="64"	right ="127"	bottom="95"/>>
+		<frame index="4" left="128"	top="64"	right ="159"	bottom="95"/>>
+		<frame index="5" left="160"	top="64"	right ="191"	bottom="95"/>>
+		<frame index="6" left="192"	top="64"	right ="223"	bottom="95"/>>
+		<frame index="7" left="224"	top="64"	right ="255"	bottom="95"/>>
+	</sprite>
+	<sprite name ="hurt" sheet="slime" frames="4">
+		<frame index="0" left="0"	top="112"	right ="31"	bottom="127"/>>
+		<frame index="1" left="32"	top="112"	right ="63"	bottom="127"/>>
+		<frame index="2" left="64"	top="112"	right ="95"	bottom="127"/>>
+		<frame index="3" left="96"	top="112"	right ="127"	bottom="127"/>>
+	</sprite>
+	<sprite name ="death" sheet="slime" frames="6">
+		<frame index="0" left="0"	top="129"	right ="31"	bottom="159"/>>
+		<frame index="1" left="32"	top="129"	right ="63"	bottom="159"/>>
+		<frame index="2" left="64"	top="129"	right ="95"	bottom="159"/>>
+		<frame index="3" left="96"	top="129"	right ="127"	bottom="159"/>>
+		<frame index="4" left="128"	top="129"	right ="159"	bottom="159"/>>
+		<frame index="5" left="160"	top="129"	right ="191"	bottom="159"/>>
+	</sprite>
+
+<sprite name="slimeSplitSheet" file="slimeSplit.png"/>
+<sprite name ="slimeSplit" sheet="slimeSplitSheet" frames="10">
+	<frame index="0" left="0"	top="1"	right ="63"	bottom="31"/>>
+	<frame index="1" left="64"	top="1"	right ="127"	bottom="31"/>>
+	<frame index="2" left="128"	top="1"	right ="191"	bottom="31"/>>
+	<frame index="3" left="192"	top="1"	right ="255"	bottom="31"/>>
+	<frame index="4" left="256"	top="1"	right ="319"	bottom="31"/>>
+	<frame index="5" left="0"	top="33"	right ="63"	bottom="63"/>>
+	<frame index="6" left="64"	top="33"	right ="127"	bottom="63"/>>
+	<frame index="7" left="128"	top="33"	right ="191"	bottom="63"/>>
+	<frame index="8" left="192"	top="33"	right ="255"	bottom="63"/>>
+	<frame index="9" left="256"	top="33"	right ="319"	bottom="63"/>>
+</sprite>
+
+<sprite name="kingslime" file="slimeking.png"/>
+	<sprite name ="kingidle" sheet="kingslime" frames="4">
+		<frame index="0" left="0"	top="96"	right ="255"	bottom="351"/>>
+		<frame index="1" left="256"	top="96"	right ="511"	bottom="351"/>>
+		<frame index="2" left="512"	top="96"	right ="767"	bottom="351"/>>
+		<frame index="3" left="768"	top="96"	right ="1023"	bottom="351"/>>
+	</sprite>
+
+	<sprite name ="kinghop" sheet="kingslime" frames="8">
+		<frame index="0" left="0"	top="352"	right ="255"	bottom="607"/>>
+		<frame index="1" left="256"	top="352"	right ="511"	bottom="607"/>>
+		<frame index="2" left="512"	top="352"	right ="767"	bottom="607"/>>
+		<frame index="3" left="768"	top="352"	right ="1023"	bottom="607"/>>
+		<frame index="4" left="1024"	top="352"	right ="1279"	bottom="607"/>>
+		<frame index="5" left="1280"	top="352"	right ="1535"	bottom="607"/>>
+		<frame index="6" left="1536"	top="352"	right ="1791"	bottom="607"/>>
+		<frame index="7" left="1792"	top="352"	right ="2047"	bottom="607"/>>
+	</sprite>
+
+	<sprite name ="kinghurt" sheet="kingslime" frames="4">
+		<frame index="0" left="0"	top="864"	right ="255"	bottom="1119"/>>
+		<frame index="1" left="256"	top="864"	right ="511"	bottom="1119"/>>
+		<frame index="2" left="512"	top="864"	right ="767"	bottom="1119"/>>
+		<frame index="3" left="768"	top="864"	right ="1023"	bottom="1119"/>>
+	</sprite>
+
+	<sprite name ="kingdeath" sheet="kingslime" frames="6">
+		<frame index="0" left="1024"	top="1024"	right ="1279"	bottom="1151"/>>
+		<frame index="1" left="1280"	top="1024"	right ="1535"	bottom="1151"/>>
+		<frame index="2" left="1536"	top="1024"	right ="1791"	bottom="1151"/>>
+		<frame index="3" left="1792"	top="1024"	right ="2047"	bottom="1151"/>>
+		<frame index="4" left="0"	top="1152"	right ="255"	bottom="1279"/>>
+		<frame index="5" left="256"	top="1152"	right ="511"	bottom="1279"/>>
+	</sprite>
+
+
+<sprite name="minotaur" file="minotaur.png"/>
+	<sprite name ="idleMinotaur" sheet="minotaur" frames="4">
+		<frame index="0" left="0"	top="0"	right ="95"	bottom="95"/>>
+		<frame index="1" left="96"	top="0"	right ="191"	bottom="95"/>>
+		<frame index="2" left="192"	top="0"	right ="287"	bottom="95"/>>
+		<frame index="3" left="288"	top="0"	right ="383"	bottom="95"/>>
+	</sprite>
+
+	<sprite name ="runMinotaur" sheet="minotaur" frames="8">
+		<frame index="0" left="0"	top="96"	right ="95"	bottom="191"/>>
+		<frame index="1" left="96"	top="96"	right ="191"	bottom="191"/>>
+		<frame index="2" left="192"	top="96"	right ="287"	bottom="191"/>>
+		<frame index="3" left="288"	top="96"	right ="383"	bottom="191"/>>
+		<frame index="4" left="384"	top="96"	right ="479"	bottom="191"/>>
+		<frame index="5" left="480"	top="96"	right ="575"	bottom="191"/>>
+		<frame index="6" left="575"	top="95"	right ="670"	bottom="190"/>>
+		<frame index="7" left="671"	top="95"	right ="766"	bottom="190"/>>
+	</sprite>
+
+	<sprite name ="snort" sheet="minotaur" frames="5">
+		<frame index="0" left="0"	top="192"	right ="95"	bottom="287"/>>
+		<frame index="1" left="96"	top="192"	right ="191"	bottom="287"/>>
+		<frame index="2" left="192"	top="192"	right ="287"	bottom="287"/>>
+		<frame index="3" left="288"	top="192"	right ="383"	bottom="287"/>>
+		<frame index="4" left="384"	top="192"	right ="479"	bottom="287"/>>
+	</sprite>
+
+	<sprite name ="overheadswing" sheet="minotaur" frames="9">
+		<frame index="0" left="0"	top="288"	right ="95"	bottom="383"/>>
+		<frame index="1" left="96"	top="288"	right ="191"	bottom="383"/>>
+		<frame index="2" left="192"	top="288"	right ="287"	bottom="383"/>>
+		<frame index="3" left="288"	top="288"	right ="383"	bottom="383"/>>
+		<frame index="4" left="384"	top="288"	right ="479"	bottom="383"/>>
+		<frame index="5" left="480"	top="288"	right ="575"	bottom="383"/>>
+		<frame index="6" left="576"	top="288"	right ="671"	bottom="383"/>>
+		<frame index="7" left="672"	top="288"	right ="767"	bottom="383"/>>
+		<frame index="8" left="768"	top="288"	right ="863"	bottom="383"/>>
+	</sprite>
+
+	<sprite name ="taunt" sheet="minotaur" frames="5">
+		<frame index="0" left="0"	top="384"	right ="95"	bottom="479"/>>
+		<frame index="1" left="96"	top="384"	right ="191"	bottom="479"/>>
+		<frame index="2" left="192"	top="384"	right ="287"	bottom="479"/>>
+		<frame index="3" left="288"	top="384"	right ="383"	bottom="479"/>>
+		<frame index="4" left="384"	top="384"	right ="479"	bottom="479"/>>
+	</sprite>
+
+	<sprite name ="idle2" sheet="minotaur" frames="6">
+		<frame index="0" left="1023"	top="384"	right ="1118"	bottom="479"/>>
+		<frame index="1" left="95"	top="480"	right ="190"	bottom="575"/>>
+		<frame index="2" left="191"	top="480"	right ="286"	bottom="575"/>>
+		<frame index="3" left="287"	top="480"	right ="382"	bottom="575"/>>
+		<frame index="4" left="383"	top="480"	right ="478"	bottom="575"/>>
+		<frame index="5" left="479"	top="480"	right ="574"	bottom="575"/>>
+	</sprite>
+
+	<sprite name ="spin" sheet="minotaur" frames="9">
+		<frame index="0" left="0"	top="576"	right ="95"	bottom="671"/>>
+		<frame index="1" left="96"	top="576"	right ="191"	bottom="671"/>>
+		<frame index="2" left="192"	top="576"	right ="287"	bottom="671"/>>
+		<frame index="3" left="288"	top="576"	right ="383"	bottom="671"/>>
+		<frame index="4" left="384"	top="576"	right ="479"	bottom="671"/>>
+		<frame index="5" left="480"	top="576"	right ="575"	bottom="671"/>>
+		<frame index="6" left="576"	top="576"	right ="671"	bottom="671"/>>
+		<frame index="7" left="672"	top="576"	right ="767"	bottom="671"/>>
+		<frame index="8" left="768"	top="576"	right ="863"	bottom="671"/>>
+	</sprite>
+
+	<sprite name ="squint" sheet="minotaur" frames="3">
+		<frame index="0" left="1023"	top="576"	right ="1118"	bottom="671"/>>
+		<frame index="1" left="95"	top="672"	right ="190"	bottom="767"/>>
+		<frame index="2" left="191"	top="672"	right ="286"	bottom="767"/>>
+	</sprite>
+
+	<sprite name ="hurt" sheet="minotaur" frames="3">
+		<frame index="0" left="0"	top="768"	right ="95"	bottom="863"/>>
+		<frame index="1" left="96"	top="768"	right ="191"	bottom="863"/>>
+		<frame index="2" left="192"	top="768"	right ="287"	bottom="863"/>>
+	</sprite>
+
+	<sprite name ="death" sheet="minotaur" frames="6">
+		<frame index="0" left="0"	top="864"	right ="95"	bottom="959"/>>
+		<frame index="1" left="96"	top="864"	right ="191"	bottom="959"/>>
+		<frame index="2" left="192"	top="864"	right ="287"	bottom="959"/>>
+		<frame index="3" left="288"	top="864"	right ="383"	bottom="959"/>>
+		<frame index="4" left="384"	top="864"	right ="479"	bottom="959"/>>
+		<frame index="5" left="480"	top="864"	right ="575"	bottom="959"/>>
+	</sprite>
+
+	<sprite name="dungeonDecor" file="dungeonDecor.png"/>
+	<sprite name ="woodpillar" sheet="dungeonDecor" frames="5">
+		<frame index="0" left="0"	top="0"	right ="15"	bottom="63"/>>
+		<frame index="1" left="16"	top="0"	right ="31"	bottom="63"/>>
+		<frame index="2" left="32"	top="0"	right ="47"	bottom="63"/>>
+		<frame index="3" left="48"	top="0"	right ="63"	bottom="63"/>>
+		<frame index="4" left="64"	top="0"	right ="79"	bottom="63"/>>
+	</sprite>
+
+	<sprite name ="bucketonchain" sheet="dungeonDecor" frames="2">
+		<frame index="0" left="80"	top="0"	right ="95"	bottom="63"/>>
+		<frame index="1" left="96"	top="0"	right ="111"	bottom="63"/>>
+	</sprite>
+
+	<sprite name ="hangingchain" sheet="dungeonDecor" frames="3">
+		<frame index="0" left="112"	top="0"	right ="127"	bottom="63"/>>
+		<frame index="1" left="128"	top="0"	right ="143"	bottom="63"/>>
+		<frame index="2" left="144"	top="0"	right ="159"	bottom="63"/>>
+	</sprite>
+
+	<sprite name ="verticalcoffin" sheet="dungeonDecor" frames="3">
+		<frame index="0" left="64"	top="64"	right ="95"	bottom="127"/>>
+		<frame index="1" left="96"	top="64"	right ="127"	bottom="127"/>>
+		<frame index="2" left="96"	top="128"	right ="127"	bottom="191"/>>
+	</sprite>
+
+	<sprite name ="horizontalcoffin" sheet="dungeonDecor" frames="6">
+		<frame index="0" left="0"	top="64"	right ="47"	bottom="95"/>>
+		<frame index="1" left="0"	top="96"	right ="47"	bottom="127"/>>
+		<frame index="2" left="0"	top="128"	right ="47"	bottom="159"/>>
+		<frame index="3" left="0"	top="160"	right ="47"	bottom="191"/>>
+		<frame index="4" left="0"	top="192"	right ="47"	bottom="223"/>>
+		<frame index="5" left="0"	top="224"	right ="47"	bottom="271"/>>
+	</sprite>
+
+	<sprite name="smallbox"	sheet="dungeonDecor" left="168"	top="72"	right ="183"	bottom="95"/>
+	<sprite name="box"	sheet="dungeonDecor" left="200"	top="71"	right ="215"	bottom="95"/>
+	<sprite name="smallboxruin"	sheet="dungeonDecor" left="128"	top="96"	right ="143"	bottom="111"/>
+	<sprite name="boxruin"	sheet="dungeonDecor" left="144"	top="96"	right ="159"	bottom="111"/>
+	<sprite name ="pots" sheet="dungeonDecor" frames="5">
+		<frame index="0" left="144"	top="112"	right ="159"	bottom="143"/>>
+		<frame index="1" left="160"	top="112"	right ="175"	bottom="143"/>>
+		<frame index="2" left="176"	top="112"	right ="191"	bottom="143"/>>
+		<frame index="3" left="192"	top="112"	right ="207"	bottom="143"/>>
+		<frame index="4" left="208"	top="112"	right ="223"	bottom="143"/>>
+	</sprite>
+
+	<sprite name ="brokenpots" sheet="dungeonDecor" frames="5">
+		<frame index="0" left="144"	top="144"	right ="159"	bottom="159"/>>
+		<frame index="1" left="160"	top="144"	right ="175"	bottom="159"/>>
+		<frame index="2" left="176"	top="144"	right ="191"	bottom="159"/>>
+		<frame index="3" left="192"	top="144"	right ="207"	bottom="159"/>>
+		<frame index="4" left="208"	top="144"	right ="223"	bottom="159"/>>
+	</sprite>
+
+    <sprite name="bullet"  sheet="spritesheet" left="135" top="0"  right="143" bottom="8"/>
+    <sprite name="bullet2" sheet="spritesheet" left="145" top="0"  right="153" bottom="8"/>
+    <sprite name="spark"   sheet="spritesheet" left="0"   top="73" right="62"  bottom="138"/>
+    <sprite name="smoke"   sheet="spritesheet" left="62"  top="73" right="128" bottom="138"/>
+    <sprite name="greenline" file="greenline.png"/>
+  
+    <sprite name="antwalk" file="ant.png"/>
+    <sprite name="ant" sheet="antwalk" frames="4">
+      <frame index="0" left="0"   top="0" right="96"  bottom="100"/>>
+      <frame index="1" left="96"  top="0" right="192" bottom="100"/>>
+      <frame index="2" left="192" top="0" right="288" bottom="100"/>>
+      <frame index="3" left="288" top="0" right="385" bottom="100"/>>
+    </sprite>
+
+	<sprite name="mainlev" file="mainlev.png"/>
+	
+	<sprite name ="lantern" sheet="mainlev" frames="9">
+		<frame index="0" left="768"	top="416"	right ="783"	bottom="431"/>>
+		<frame index="1" left="784"	top="416"	right ="799"	bottom="431"/>>
+		<frame index="2" left="800"	top="416"	right ="815"	bottom="431"/>>
+		<frame index="3" left="816"	top="416"	right ="831"	bottom="431"/>>
+		<frame index="4" left="832"	top="416"	right ="847"	bottom="431"/>>
+		<frame index="5" left="848"	top="416"	right ="863"	bottom="431"/>>
+		<frame index="6" left="864"	top="416"	right ="879"	bottom="431"/>>
+		<frame index="7" left="880"	top="416"	right ="895"	bottom="431"/>>
+		<frame index="8" left="896"	top="416"	right ="911"	bottom="431"/>>
+	</sprite>
+
+	<sprite name="support1"  sheet="mainlev" left="672"   top="0"  right="815"  bottom="55"/>
+	<sprite name="support2"  sheet="mainlev" left="672"   top="64"  right="784"  bottom="120"/>
+
+	<sprite name="pitsheet" file="pit.png"/>
+	<sprite name ="pit" sheet="pitsheet" frames="11">
+		<frame index="0" left="0"	top="0"	right ="31"	bottom="31"/>>
+		<frame index="1" left="32"	top="0"	right ="63"	bottom="31"/>>
+		<frame index="2" left="64"	top="0"	right ="95"	bottom="31"/>>
+		<frame index="3" left="96"	top="0"	right ="127"	bottom="31"/>>
+		<frame index="4" left="0"	top="32"	right ="31"	bottom="63"/>>
+		<frame index="5" left="32"	top="32"	right ="63"	bottom="63"/>>
+		<frame index="6" left="64"	top="32"	right ="95"	bottom="63"/>>
+		<frame index="7" left="96"	top="32"	right ="127"	bottom="63"/>>
+		<frame index="8" left="0"	top="64"	right ="31"	bottom="95"/>>
+		<frame index="9" left="32"	top="64"	right ="63"	bottom="95"/>>
+		<frame index="10" left="64"	top="64"	right ="95"	bottom="95"/>>
+	</sprite>
+
+	<!-- Floors for map-->
+
+	<sprite name="browncobblesheet" file="browncobble.png"/>
+	<sprite name ="browncobblefloor" sheet="browncobblesheet" frames="9">
+		<frame index="0" left="0"	top="0"	right ="31"	bottom="31"/>>
+		<frame index="1" left="32"	top="0"	right ="63"	bottom="31"/>>
+		<frame index="2" left="64"	top="0"	right ="95"	bottom="31"/>>
+		<frame index="3" left="0"	top="32"	right ="31"	bottom="63"/>>
+		<frame index="4" left="32"	top="32"	right ="63"	bottom="63"/>>
+		<frame index="5" left="64"	top="32"	right ="95"	bottom="63"/>>
+		<frame index="6" left="0"	top="64"	right ="31"	bottom="95"/>>
+		<frame index="7" left="32"	top="64"	right ="63"	bottom="95"/>>
+		<frame index="8" left="64"	top="64"	right ="95"	bottom="95"/>>
+	</sprite>
+
+	<sprite name="marshgrasssheet" file="marshgrass.png"/>
+	<sprite name ="marshgrassfloor" sheet="marshgrasssheet" frames="9">
+		<frame index="0" left="0"	top="0"	right ="31"	bottom="31"/>>
+		<frame index="1" left="32"	top="0"	right ="63"	bottom="31"/>>
+		<frame index="2" left="64"	top="0"	right ="95"	bottom="31"/>>
+		<frame index="3" left="0"	top="32"	right ="31"	bottom="63"/>>
+		<frame index="4" left="32"	top="32"	right ="63"	bottom="63"/>>
+		<frame index="5" left="64"	top="32"	right ="95"	bottom="63"/>>
+		<frame index="6" left="0"	top="64"	right ="31"	bottom="95"/>>
+		<frame index="7" left="32"	top="64"	right ="63"	bottom="95"/>>
+		<frame index="8" left="64"	top="64"	right ="95"	bottom="95"/>>
+	</sprite>
+
+	<sprite name="yellowfloorsheet" file="yellowfloor.png"/>
+	<sprite name ="yellowgroundfloor" sheet="yellowfloorsheet" frames="9">
+		<frame index="0" left="0"	top="0"	right ="31"	bottom="31"/>>
+		<frame index="1" left="32"	top="0"	right ="63"	bottom="31"/>>
+		<frame index="2" left="64"	top="0"	right ="95"	bottom="31"/>>
+		<frame index="3" left="0"	top="32"	right ="31"	bottom="63"/>>
+		<frame index="4" left="32"	top="32"	right ="63"	bottom="63"/>>
+		<frame index="5" left="64"	top="32"	right ="95"	bottom="63"/>>
+		<frame index="6" left="0"	top="64"	right ="31"	bottom="95"/>>
+		<frame index="7" left="32"	top="64"	right ="63"	bottom="95"/>>
+		<frame index="8" left="64"	top="64"	right ="95"	bottom="95"/>>
+	</sprite>
+
+	<sprite name="brownfloorsheet" file="brownfloor.png"/>
+	<sprite name ="browngroundfloor" sheet="brownfloorsheet" frames="9">
+		<frame index="0" left="0"	top="0"	right ="31"	bottom="31"/>>
+		<frame index="1" left="32"	top="0"	right ="63"	bottom="31"/>>
+		<frame index="2" left="64"	top="0"	right ="95"	bottom="31"/>>
+		<frame index="3" left="0"	top="32"	right ="31"	bottom="63"/>>
+		<frame index="4" left="32"	top="32"	right ="63"	bottom="63"/>>
+		<frame index="5" left="64"	top="32"	right ="95"	bottom="63"/>>
+		<frame index="6" left="0"	top="64"	right ="31"	bottom="95"/>>
+		<frame index="7" left="32"	top="64"	right ="63"	bottom="95"/>>
+		<frame index="8" left="64"	top="64"	right ="95"	bottom="95"/>>
+	</sprite>
+
+	<sprite name="grassfloorsheet" file="grassfloor.png"/>
+	<sprite name ="grassgroundfloor" sheet="grassfloorsheet" frames="9">
+		<frame index="0" left="0"	top="0"	right ="31"	bottom="31"/>>
+		<frame index="1" left="32"	top="0"	right ="63"	bottom="31"/>>
+		<frame index="2" left="64"	top="0"	right ="95"	bottom="31"/>>
+		<frame index="3" left="0"	top="32"	right ="31"	bottom="63"/>>
+		<frame index="4" left="32"	top="32"	right ="63"	bottom="63"/>>
+		<frame index="5" left="64"	top="32"	right ="95"	bottom="63"/>>
+		<frame index="6" left="0"	top="64"	right ="31"	bottom="95"/>>
+		<frame index="7" left="32"	top="64"	right ="63"	bottom="95"/>>
+		<frame index="8" left="64"	top="64"	right ="95"	bottom="95"/>>
+	</sprite>
+
+	<sprite name="grassfloorsheet2" file="grassfloor2.png"/>
+	<sprite name ="grassgroundfloor2" sheet="grassfloorsheet2" frames="9">
+		<frame index="0" left="0"	top="0"	right ="31"	bottom="31"/>>
+		<frame index="1" left="32"	top="0"	right ="63"	bottom="31"/>>
+		<frame index="2" left="64"	top="0"	right ="95"	bottom="31"/>>
+		<frame index="3" left="0"	top="32"	right ="31"	bottom="63"/>>
+		<frame index="4" left="32"	top="32"	right ="63"	bottom="63"/>>
+		<frame index="5" left="64"	top="32"	right ="95"	bottom="63"/>>
+		<frame index="6" left="0"	top="64"	right ="31"	bottom="95"/>>
+		<frame index="7" left="32"	top="64"	right ="63"	bottom="95"/>>
+		<frame index="8" left="64"	top="64"	right ="95"	bottom="95"/>>
+	</sprite>
+
+	<sprite name="greencobblesheet" file="greencobble.png"/>
+	<sprite name ="greencobblefloor" sheet="greencobblesheet" frames="9">
+		<frame index="0" left="0"	top="0"	right ="31"	bottom="31"/>>
+		<frame index="1" left="32"	top="0"	right ="63"	bottom="31"/>>
+		<frame index="2" left="64"	top="0"	right ="95"	bottom="31"/>>
+		<frame index="3" left="0"	top="32"	right ="31"	bottom="63"/>>
+		<frame index="4" left="32"	top="32"	right ="63"	bottom="63"/>>
+		<frame index="5" left="64"	top="32"	right ="95"	bottom="63"/>>
+		<frame index="6" left="0"	top="64"	right ="31"	bottom="95"/>>
+		<frame index="7" left="32"	top="64"	right ="63"	bottom="95"/>>
+		<frame index="8" left="64"	top="64"	right ="95"	bottom="95"/>>
+	</sprite>
+
+	<sprite name="browngravelsheet" file="browngravel.png"/>
+	<sprite name ="browngravel" sheet="browngravelsheet" frames="4">
+		<frame index="0" left="0"	top="0"	right ="31"	bottom="31"/>>
+		<frame index="1" left="32"	top="0"	right ="63"	bottom="31"/>>
+		<frame index="2" left="0"	top="32"	right ="31"	bottom="63"/>>
+		<frame index="3" left="32"	top="32"	right ="63"	bottom="63"/>>
+	</sprite>
+
+	<sprite name="greygravelsheet" file="greygravel.png"/>
+	<sprite name ="greygravel" sheet="greygravelsheet" frames="4">
+		<frame index="0" left="0"	top="0"	right ="31"	bottom="31"/>>
+		<frame index="1" left="32"	top="0"	right ="63"	bottom="31"/>>
+		<frame index="2" left="0"	top="32"	right ="31"	bottom="63"/>>
+		<frame index="3" left="32"	top="32"	right ="63"	bottom="63"/>>
+	</sprite>
+	
+	<!-- END Floors for map -->
+	<!-- Walls for map -->
+
+	<sprite name="floor1"  sheet="mainlev" left="736"   top="864"  right="771"  bottom="899"/>
+	
+	<sprite name ="wallout1" sheet="mainlev" frames="12">
+		<frame index="0" left="0"	top="0"		right ="31"	bottom="31"/>>
+		<frame index="1" left="32"	top="0"		right ="63"	bottom="31"/>>
+		<frame index="2" left="64"	top="0"		right ="95"	bottom="31"/>>
+		<frame index="3" left="0"	top="32"	right ="31"	bottom="63"/>>
+		<frame index="4" left="32"	top="32"	right ="63"	bottom="63"/>>
+		<frame index="5" left="64"	top="32"	right ="95"	bottom="63"/>>
+		<frame index="6" left="0"	top="64"	right ="31"	bottom="95"/>>
+		<frame index="7" left="32"	top="64"	right ="63"	bottom="95"/>>
+		<frame index="8" left="64"	top="64"	right ="95"	bottom="95"/>>
+		<frame index="9" left="96"	top="112"	right ="127"	bottom="143"/>>
+		<frame index="10" left="160"	top="112"	right ="191"	bottom="143"/>>
+		<frame index="11" left="192"  top="0" right="223" bottom="31"/>>
+	</sprite>
+
+	<sprite name ="wall1" sheet="mainlev" frames="4">
+		<frame index="0" left="0"	top="96"	right ="31"	bottom="159"/>>
+		<frame index="1" left="32"	top="96"	right ="63"	bottom="159"/>>
+		<frame index="2" left="64"	top="96"	right ="95"	bottom="159"/>>
+		<frame index="3" left="192"	top="32"	right ="223"	bottom="95"/>>
+	</sprite>
+
+	<sprite name ="walledgex1" sheet="mainlev" frames="4">
+		<frame index="0" left="0"	top="0"	right ="31"	bottom="15"/>>
+		<frame index="1" left="64"	top="0"	right ="95"	bottom="15"/>>
+		<frame index="2" left="0"	top="80"	right ="31"	bottom="95"/>>
+		<frame index="3" left="64"	top="80"	right ="95"	bottom="95"/>>
+	</sprite>
+
+	<sprite name ="walledgey1" sheet="mainlev" frames="2">
+		<frame index="0" left="0"	top="32"	right ="15"	bottom="63"/>>
+		<frame index="1" left="80"	top="32"	right ="95"	bottom="63"/>>
+	</sprite>
+
+	<sprite name ="wallcorner1" sheet="mainlev" frames="6">
+		<frame index="0" left="112"	top="96"	right ="127"	bottom="111"/>>
+		<frame index="1" left="160"	top="96"	right ="175"	bottom="111"/>>
+		<frame index="2" left="96"	top="112"	right ="111"	bottom="127"/>>
+		<frame index="3" left="176"	top="112"	right ="191"	bottom="127"/>>
+		<frame index="4" left="96"	top="128"	right ="111"	bottom="143"/>>
+		<frame index="5" left="176"	top="128"	right ="191"	bottom="143"/>>
+	</sprite>
+
+	<sprite name="wallbotpoke1"  sheet="mainlev" left="112"   top="96"  right="175"  bottom="111"/>
+
+	<sprite name ="wallout2" sheet="mainlev" frames="12">
+		<frame index="0" left="224"	top="0"	right ="255"	bottom="31"/>>
+		<frame index="1" left="256"	top="0"	right ="287"	bottom="31"/>>
+		<frame index="2" left="288"	top="0"	right ="319"	bottom="31"/>>
+		<frame index="3" left="224"	top="32"	right ="255"	bottom="63"/>>
+		<frame index="4" left="256"	top="32"	right ="287"	bottom="63"/>>
+		<frame index="5" left="288"	top="32"	right ="319"	bottom="63"/>>
+		<frame index="6" left="224"	top="64"	right ="255"	bottom="95"/>>
+		<frame index="7" left="256"	top="64"	right ="287"	bottom="95"/>>
+		<frame index="8" left="288"	top="64"	right ="319"	bottom="95"/>>
+		<frame index="9" left="320"	top="112"	right ="351"	bottom="143"/>>
+		<frame index="10" left="384"	top="112"	right ="415"	bottom="143"/>>
+		<frame index="11" left="416"	top="0"	right ="447"	bottom="31"/>>
+
+	</sprite>
+
+	<sprite name ="wall2" sheet="mainlev" frames="4">
+		<frame index="0" left="224"	top="96"	right ="255"	bottom="159"/>>
+		<frame index="1" left="256"	top="96"	right ="287"	bottom="159"/>>
+		<frame index="2" left="288"	top="96"	right ="319"	bottom="159"/>>
+		<frame index="3" left="416"	top="32"	right ="447"	bottom="95"/>>
+	</sprite>
+
+	<sprite name ="walledgex2" sheet="mainlev" frames="4">
+		<frame index="0" left="224"	top="0"	right ="255"	bottom="15"/>>
+		<frame index="1" left="288"	top="0"	right ="319"	bottom="15"/>>
+		<frame index="2" left="224"	top="80"	right ="255"	bottom="95"/>>
+		<frame index="3" left="288"	top="80"	right ="319"	bottom="95"/>>
+	</sprite>
+
+	<sprite name ="walledgey2" sheet="mainlev" frames="2">
+		<frame index="0" left="224"	top="32"	right ="239"	bottom="63"/>>
+		<frame index="1" left="304"	top="32"	right ="319"	bottom="63"/>>
+	</sprite>
+
+	<sprite name ="wallcorner2" sheet="mainlev" frames="6">
+		<frame index="0" left="338"	top="96"	right ="353"	bottom="111"/>>
+		<frame index="1" left="384"	top="94"	right ="399"	bottom="109"/>>
+		<frame index="2" left="320"	top="112"	right ="335"	bottom="127"/>>
+		<frame index="3" left="400"	top="112"	right ="415"	bottom="127"/>>
+		<frame index="4" left="320"	top="128"	right ="335"	bottom="143"/>>
+		<frame index="5" left="400"	top="128"	right ="415"	bottom="143"/>>
+	</sprite>
+	<sprite name="wallbotpoke2"  sheet="mainlev" left="112"   top="96"  right="175"  bottom="111"/>
+
+	<sprite name="mainlev" file="mainlev.png"/>
+	<sprite name ="wallout3" sheet="mainlev" frames="12">
+		<frame index="0" left="448"	top="0"	right ="479"	bottom="31"/>>
+		<frame index="1" left="480"	top="0"	right ="511"	bottom="31"/>>
+		<frame index="2" left="512"	top="0"	right ="543"	bottom="31"/>>
+		<frame index="3" left="448"	top="32"	right ="479"	bottom="63"/>>
+		<frame index="4" left="480"	top="32"	right ="511"	bottom="63"/>>
+		<frame index="5" left="512"	top="32"	right ="543"	bottom="63"/>>
+		<frame index="6" left="448"	top="64"	right ="479"	bottom="95"/>>
+		<frame index="7" left="480"	top="64"	right ="511"	bottom="95"/>>
+		<frame index="8" left="512"	top="64"	right ="543"	bottom="95"/>>
+		<frame index="9" left="544"	top="112"	right ="575"	bottom="143"/>>
+		<frame index="10" left="608"	top="112"	right ="639"	bottom="143"/>>
+		<frame index="11" left="640"	top="0"	right ="671"	bottom="31"/>>
+
+	</sprite>
+	<sprite name ="wall3" sheet="mainlev" frames="4">
+		<frame index="0" left="448"	top="96"	right ="479"	bottom="159"/>>
+		<frame index="1" left="480"	top="96"	right ="511"	bottom="159"/>>
+		<frame index="2" left="512"	top="96"	right ="543"	bottom="159"/>>
+		<frame index="3" left="640"	top="32"	right ="671"	bottom="95"/>>
+	</sprite>
+	<sprite name ="walledgex3" sheet="mainlev" frames="4">
+		<frame index="0" left="448"	top="0"	right ="479"	bottom="15"/>>
+		<frame index="1" left="512"	top="0"	right ="543"	bottom="15"/>>
+		<frame index="2" left="448"	top="80"	right ="479"	bottom="95"/>>
+		<frame index="3" left="512"	top="80"	right ="543"	bottom="95"/>>
+	</sprite>
+	<sprite name ="walledgey3" sheet="mainlev" frames="2">
+		<frame index="0" left="448"	top="32"	right ="463"	bottom="63"/>>
+		<frame index="1" left="528"	top="32"	right ="543"	bottom="63"/>>
+	</sprite>
+	<sprite name ="wallcorner3" sheet="mainlev" frames="6">
+		<frame index="0" left="562"	top="96"	right ="577"	bottom="111"/>>
+		<frame index="1" left="608"	top="94"	right ="623"	bottom="109"/>>
+		<frame index="2" left="544"	top="112"	right ="559"	bottom="127"/>>
+		<frame index="3" left="624"	top="112"	right ="639"	bottom="127"/>>
+		<frame index="4" left="544"	top="128"	right ="559"	bottom="143"/>>
+		<frame index="5" left="624"	top="128"	right ="639"	bottom="143"/>>
+	</sprite>
+	<sprite name="wallbotpoke3"  sheet="mainlev" left="560"   top="96"  right="623"  bottom="111"/>
+
+	<sprite name ="wallout4" sheet="mainlev" frames="12">
+		<frame index="0" left="0"	top="160"	right ="31"	bottom="191"/>>
+		<frame index="1" left="32"	top="160"	right ="63"	bottom="191"/>>
+		<frame index="2" left="64"	top="160"	right ="95"	bottom="191"/>>
+		<frame index="3" left="0"	top="192"	right ="31"	bottom="223"/>>
+		<frame index="4" left="32"	top="192"	right ="63"	bottom="223"/>>
+		<frame index="5" left="64"	top="192"	right ="95"	bottom="223"/>>
+		<frame index="6" left="0"	top="224"	right ="31"	bottom="255"/>>
+		<frame index="7" left="32"	top="224"	right ="63"	bottom="255"/>>
+		<frame index="8" left="64"	top="224"	right ="95"	bottom="255"/>>
+		<frame index="9" left="96"	top="272"	right ="127"	bottom="303"/>>
+		<frame index="10" left="160"	top="272"	right ="191"	bottom="303"/>>
+		<frame index="11" left="192"	top="160"	right ="223"	bottom="191"/>>
+	</sprite>
+
+	<sprite name ="wall4" sheet="mainlev" frames="4">
+		<frame index="0" left="0"	top="256"	right ="31"	bottom="319"/>>
+		<frame index="1" left="32"	top="256"	right ="63"	bottom="319"/>>
+		<frame index="2" left="64"	top="256"	right ="95"	bottom="319"/>>
+		<frame index="3" left="192"	top="192"	right ="223"	bottom="255"/>>
+	</sprite>
+
+	<sprite name ="walledgex4" sheet="mainlev" frames="4">
+		<frame index="0" left="0"	top="160"	right ="31"	bottom="175"/>>
+		<frame index="1" left="64"	top="160"	right ="95"	bottom="175"/>>
+		<frame index="2" left="0"	top="240"	right ="31"	bottom="255"/>>
+		<frame index="3" left="64"	top="240"	right ="95"	bottom="255"/>>
+	</sprite>
+
+	<sprite name ="walledgey4" sheet="mainlev" frames="2">
+		<frame index="0" left="0"	top="192"	right ="15"	bottom="223"/>>
+		<frame index="1" left="80"	top="192"	right ="95"	bottom="223"/>>
+	</sprite>
+
+	<sprite name ="wallcorner4" sheet="mainlev" frames="6">
+		<frame index="0" left="114"	top="256"	right ="129"	bottom="271"/>>
+		<frame index="1" left="160"	top="254"	right ="175"	bottom="271"/>>
+		<frame index="2" left="96"	top="272"	right ="111"	bottom="287"/>>
+		<frame index="3" left="176"	top="272"	right ="191"	bottom="287"/>>
+		<frame index="4" left="96"	top="288"	right ="111"	bottom="303"/>>
+		<frame index="5" left="176"	top="288"	right ="191"	bottom="303"/>>
+	</sprite>
+	<sprite name="wallbotpoke4"  sheet="mainlev" left="112"   top="256"  right="175"  bottom="271"/>
+
+	<sprite name="mainlev" file="mainlev.png"/>
+	<sprite name ="wallout5" sheet="mainlev" frames="12">
+		<frame index="0" left="224"	top="160"	right ="255"	bottom="191"/>>
+		<frame index="1" left="256"	top="160"	right ="287"	bottom="191"/>>
+		<frame index="2" left="288"	top="160"	right ="319"	bottom="191"/>>
+		<frame index="3" left="224"	top="192"	right ="255"	bottom="223"/>>
+		<frame index="4" left="256"	top="192"	right ="287"	bottom="223"/>>
+		<frame index="5" left="288"	top="192"	right ="319"	bottom="223"/>>
+		<frame index="6" left="224"	top="224"	right ="255"	bottom="255"/>>
+		<frame index="7" left="256"	top="224"	right ="287"	bottom="255"/>>
+		<frame index="8" left="288"	top="224"	right ="319"	bottom="255"/>>
+		<frame index="9" left="416"	top="160"	right ="447"	bottom="191"/>>
+		<frame index="10" left="832"	top="256"	right ="863"	bottom="287"/>>
+		<frame index="11" left="896"	top="256"	right ="927"	bottom="287"/>>
+	</sprite>
+	<sprite name ="wall5" sheet="mainlev" frames="4">
+		<frame index="0" left="736"	top="224"	right ="767"	bottom="287"/>>
+		<frame index="1" left="768"	top="224"	right ="799"	bottom="287"/>>
+		<frame index="2" left="800"	top="224"	right ="831"	bottom="287"/>>
+		<frame index="3" left="928"	top="160"	right ="959"	bottom="223"/>>
+	</sprite>
+	<sprite name ="walledgex5" sheet="mainlev" frames="4">
+		<frame index="0" left="224"	top="160"	right ="255"	bottom="175"/>>
+		<frame index="1" left="288"	top="160"	right ="319"	bottom="175"/>>
+		<frame index="2" left="224"	top="240"	right ="255"	bottom="255"/>>
+		<frame index="3" left="288"	top="240"	right ="319"	bottom="255"/>>
+	</sprite>
+	<sprite name ="walledgey5" sheet="mainlev" frames="2">
+		<frame index="0" left="224"	top="192"	right ="239"	bottom="223"/>>
+		<frame index="1" left="304"	top="192"	right ="319"	bottom="223"/>>
+	</sprite>
+	<sprite name ="wallcorner5" sheet="mainlev" frames="6">
+		<frame index="0" left="338"	top="256"	right ="353"	bottom="271"/>>
+		<frame index="1" left="384"	top="254"	right ="399"	bottom="269"/>>
+		<frame index="2" left="320"	top="272"	right ="335"	bottom="287"/>>
+		<frame index="3" left="400"	top="272"	right ="415"	bottom="287"/>>
+		<frame index="4" left="320"	top="288"	right ="335"	bottom="303"/>>
+		<frame index="5" left="400"	top="288"	right ="415"	bottom="303"/>>
+	</sprite>
+	<sprite name="wallbotpoke5"  sheet="mainlev" left="112"   top="256"  right="175"  bottom="271"/>
+
+	<sprite name ="wallout6" sheet="mainlev" frames="12">
+		<frame index="0" left="448"	top="160"	right ="479"	bottom="191"/>>
+		<frame index="1" left="480"	top="160"	right ="511"	bottom="191"/>>
+		<frame index="2" left="512"	top="160"	right ="543"	bottom="191"/>>
+		<frame index="3" left="448"	top="192"	right ="479"	bottom="223"/>>
+		<frame index="4" left="480"	top="192"	right ="511"	bottom="223"/>>
+		<frame index="5" left="512"	top="192"	right ="543"	bottom="223"/>>
+		<frame index="6" left="448"	top="224"	right ="479"	bottom="255"/>>
+		<frame index="7" left="480"	top="224"	right ="511"	bottom="255"/>>
+		<frame index="8" left="512"	top="224"	right ="543"	bottom="255"/>>
+		<frame index="9" left="640"	top="160"	right ="671"	bottom="191"/>>
+		<frame index="10" left="32"	top="288"	right ="63"	bottom="319"/>>
+		<frame index="11" left="96"	top="288"	right ="127"	bottom="319"/>>
+	</sprite>
+	<sprite name ="wall6" sheet="mainlev" frames="4">
+		<frame index="0" left="960"	top="224"	right ="991"	bottom="287"/>>
+		<frame index="1" left="992"	top="224"	right ="1023"	bottom="287"/>>
+		<frame index="2" left="0"	top="288"	right ="31"	bottom="351"/>>
+		<frame index="3" left="128"	top="224"	right ="159"	bottom="287"/>>
+	</sprite>
+	<sprite name ="walledgex6" sheet="mainlev" frames="4">
+		<frame index="0" left="448"	top="160"	right ="479"	bottom="175"/>>
+		<frame index="1" left="512"	top="160"	right ="543"	bottom="175"/>>
+		<frame index="2" left="448"	top="240"	right ="479"	bottom="255"/>>
+		<frame index="3" left="512"	top="240"	right ="543"	bottom="255"/>>
+	</sprite>
+	<sprite name ="walledgey6" sheet="mainlev" frames="2">
+		<frame index="0" left="448"	top="192"	right ="463"	bottom="223"/>>
+		<frame index="1" left="528"	top="192"	right ="543"	bottom="223"/>>
+	</sprite>
+	<sprite name ="wallcorner6" sheet="mainlev" frames="6">
+		<frame index="0" left="562"	top="256"	right ="577"	bottom="271"/>>
+		<frame index="1" left="608"	top="254"	right ="623"	bottom="269"/>>
+		<frame index="2" left="544"	top="272"	right ="559"	bottom="287"/>>
+		<frame index="3" left="624"	top="272"	right ="639"	bottom="287"/>>
+		<frame index="4" left="544"	top="288"	right ="559"	bottom="303"/>>
+		<frame index="5" left="624"	top="288"	right ="639"	bottom="303"/>>
+	</sprite>
+	<sprite name="wallbotpoke6"  sheet="mainlev" left="560"   top="256"  right="623"  bottom="271"/>
+
+	<sprite name ="wallout7" sheet="mainlev" frames="12">
+		<frame index="0" left="0"	top="320"	right ="31"	bottom="351"/>>
+		<frame index="1" left="32"	top="320"	right ="63"	bottom="351"/>>
+		<frame index="2" left="64"	top="320"	right ="95"	bottom="351"/>>
+		<frame index="3" left="0"	top="352"	right ="31"	bottom="383"/>>
+		<frame index="4" left="32"	top="352"	right ="63"	bottom="383"/>>
+		<frame index="5" left="64"	top="352"	right ="95"	bottom="383"/>>
+		<frame index="6" left="0"	top="384"	right ="31"	bottom="415"/>>
+		<frame index="7" left="32"	top="384"	right ="63"	bottom="415"/>>
+		<frame index="8" left="64"	top="384"	right ="95"	bottom="415"/>>
+		<frame index="9" left="96"	top="432"	right ="127"	bottom="463"/>>
+		<frame index="10" left="160"	top="432"	right ="191"	bottom="463"/>>
+		<frame index="11" left="192"	top="320"	right ="223"	bottom="351"/>>
+	</sprite>
+
+	<sprite name ="wall7" sheet="mainlev" frames="4">
+		<frame index="0" left="0"	top="416"	right ="31"	bottom="479"/>>
+		<frame index="1" left="32"	top="416"	right ="63"	bottom="479"/>>
+		<frame index="2" left="64"	top="416"	right ="95"	bottom="479"/>>
+		<frame index="3" left="192"	top="352"	right ="223"	bottom="415"/>>
+	</sprite>
+
+	<sprite name ="walledgex7" sheet="mainlev" frames="4">
+		<frame index="0" left="0"	top="320"	right ="31"	bottom="335"/>>
+		<frame index="1" left="64"	top="320"	right ="95"	bottom="335"/>>
+		<frame index="2" left="0"	top="400"	right ="31"	bottom="415"/>>
+		<frame index="3" left="64"	top="400"	right ="95"	bottom="415"/>>
+	</sprite>
+
+	<sprite name ="walledgey7" sheet="mainlev" frames="2">
+		<frame index="0" left="0"	top="352"	right ="15"	bottom="383"/>>
+		<frame index="1" left="80"	top="352"	right ="95"	bottom="383"/>>
+	</sprite>
+	<sprite name ="wallcorner7" sheet="mainlev" frames="6">
+		<frame index="0" left="114"	top="416"	right ="129"	bottom="431"/>>
+		<frame index="1" left="160"	top="414"	right ="175"	bottom="429"/>>
+		<frame index="2" left="96"	top="432"	right ="111"	bottom="447"/>>
+		<frame index="3" left="176"	top="432"	right ="191"	bottom="447"/>>
+		<frame index="4" left="96"	top="448"	right ="111"	bottom="463"/>>
+		<frame index="5" left="176"	top="448"	right ="191"	bottom="463"/>>
+	</sprite>
+	<sprite name="wallbotpoke7"  sheet="mainlev" left="112"   top="416"  right="175"  bottom="431"/>
+
+	<sprite name ="wallout8" sheet="mainlev" frames="12">
+		<frame index="0" left="224"	top="320"	right ="255"	bottom="351"/>>
+		<frame index="1" left="256"	top="320"	right ="287"	bottom="351"/>>
+		<frame index="2" left="288"	top="320"	right ="319"	bottom="351"/>>
+		<frame index="3" left="224"	top="352"	right ="255"	bottom="383"/>>
+		<frame index="4" left="256"	top="352"	right ="287"	bottom="383"/>>
+		<frame index="5" left="288"	top="352"	right ="319"	bottom="383"/>>
+		<frame index="6" left="224"	top="384"	right ="255"	bottom="415"/>>
+		<frame index="7" left="256"	top="384"	right ="287"	bottom="415"/>>
+		<frame index="8" left="288"	top="384"	right ="319"	bottom="415"/>>
+		<frame index="9" left="416"	top="320"	right ="447"	bottom="351"/>>
+		<frame index="0" left="832"	top="416"	right ="863"	bottom="447"/>>
+		<frame index="1" left="896"	top="416"	right ="927"	bottom="447"/>>
+	</sprite>
+	<sprite name ="wall8" sheet="mainlev" frames="4">
+		<frame index="0" left="224"	top="416"	right ="255"	bottom="479"/>>
+		<frame index="1" left="256"	top="416"	right ="287"	bottom="479"/>>
+		<frame index="2" left="288"	top="416"	right ="319"	bottom="479"/>>
+		<frame index="3" left="416"	top="352"	right ="447"	bottom="415"/>>
+	</sprite>
+	<sprite name ="walledgex8" sheet="mainlev" frames="4">
+		<frame index="0" left="224"	top="320"	right ="255"	bottom="335"/>>
+		<frame index="1" left="288"	top="320"	right ="319"	bottom="335"/>>
+		<frame index="2" left="224"	top="400"	right ="255"	bottom="415"/>>
+		<frame index="3" left="288"	top="400"	right ="319"	bottom="415"/>>
+	</sprite>
+	<sprite name ="walledgey8" sheet="mainlev" frames="2">
+		<frame index="0" left="224"	top="352"	right ="239"	bottom="383"/>>
+		<frame index="1" left="304"	top="352"	right ="319"	bottom="383"/>>
+	</sprite>
+	<sprite name ="wallcorner8" sheet="mainlev" frames="6">
+		<frame index="0" left="338"	top="416"	right ="353"	bottom="431"/>>
+		<frame index="1" left="384"	top="414"	right ="399"	bottom="429"/>>
+		<frame index="2" left="320"	top="432"	right ="335"	bottom="447"/>>
+		<frame index="3" left="400"	top="432"	right ="415"	bottom="447"/>>
+		<frame index="4" left="320"	top="448"	right ="335"	bottom="463"/>>
+		<frame index="5" left="400"	top="448"	right ="415"	bottom="463"/>>
+	</sprite>
+	<sprite name="wallbotpoke8"  sheet="mainlev" left="112"   top="416"  right="175"  bottom="431"/>
+
+
+	<sprite name ="wallout9" sheet="mainlev" frames="12">
+		<frame index="0" left="448"	top="320"	right ="479"	bottom="351"/>>
+		<frame index="1" left="480"	top="320"	right ="511"	bottom="351"/>>
+		<frame index="2" left="512"	top="320"	right ="543"	bottom="351"/>>
+		<frame index="3" left="448"	top="352"	right ="479"	bottom="383"/>>
+		<frame index="4" left="480"	top="352"	right ="511"	bottom="383"/>>
+		<frame index="5" left="512"	top="352"	right ="543"	bottom="383"/>>
+		<frame index="6" left="448"	top="384"	right ="479"	bottom="415"/>>
+		<frame index="7" left="480"	top="384"	right ="511"	bottom="415"/>>
+		<frame index="8" left="512"	top="384"	right ="543"	bottom="415"/>>
+		<frame index="9" left="544"	top="432"	right ="575"	bottom="463"/>>
+		<frame index="10" left="608"	top="432"	right ="639"	bottom="463"/>>
+		<frame index="11" left="416"	top="320"	right ="447"	bottom="351"/>>
+	</sprite>
+	<sprite name ="wall9" sheet="mainlev" frames="4">
+		<frame index="0" left="448"	top="416"	right ="479"	bottom="479"/>>
+		<frame index="1" left="480"	top="416"	right ="511"	bottom="479"/>>
+		<frame index="2" left="512"	top="416"	right ="543"	bottom="479"/>>
+		<frame index="3" left="640"	top="352"	right ="671"	bottom="415"/>>
+	</sprite>
+	<sprite name ="walledgex9" sheet="mainlev" frames="4">
+		<frame index="0" left="448"	top="320"	right ="479"	bottom="335"/>>
+		<frame index="1" left="512"	top="320"	right ="543"	bottom="335"/>>
+		<frame index="2" left="448"	top="400"	right ="479"	bottom="415"/>>
+		<frame index="3" left="512"	top="400"	right ="543"	bottom="415"/>>
+	</sprite>
+	<sprite name ="walledgey9" sheet="mainlev" frames="2">
+		<frame index="0" left="448"	top="352"	right ="463"	bottom="383"/>>
+		<frame index="1" left="528"	top="352"	right ="543"	bottom="383"/>>
+	</sprite>
+	<sprite name ="wallcorner9" sheet="mainlev" frames="6">
+		<frame index="0" left="562"	top="416"	right ="577"	bottom="431"/>>
+		<frame index="1" left="608"	top="414"	right ="623"	bottom="429"/>>
+		<frame index="2" left="544"	top="432"	right ="559"	bottom="447"/>>
+		<frame index="3" left="624"	top="432"	right ="639"	bottom="447"/>>
+		<frame index="4" left="544"	top="448"	right ="559"	bottom="463"/>>
+		<frame index="5" left="624"	top="448"	right ="639"	bottom="463"/>>
+	</sprite>
+	<sprite name="wallbotpoke9"  sheet="mainlev" left="560"   top="416"  right="623"  bottom="431"/>
+
+	<!-- END Walls for map -->
+	<sprite name ="rails" sheet="mainlev" frames="12">
+		<frame index="0" left="817"	top="0"	right ="831"	bottom="15"/>>
+		<frame index="1" left="833"	top="0"	right ="847"	bottom="15"/>>
+		<frame index="2" left="881"	top="0"	right ="895"	bottom="15"/>>
+		<frame index="3" left="817"	top="16"	right ="831"	bottom="31"/>>
+		<frame index="4" left="832"	top="16"	right ="847"	bottom="31"/>>
+		<frame index="5" left="865"	top="16"	right ="879"	bottom="31"/>>
+		<frame index="6" left="833"	top="48"	right ="847"	bottom="63"/>>
+		<frame index="7" left="866"	top="48"	right ="879"	bottom="63"/>>
+		<frame index="8" left="818"	top="64"	right ="831"	bottom="79"/>>
+		<frame index="9" left="881"	top="64"	right ="895"	bottom="79"/>>
+		<frame index="10" left="945"	top="1"	right ="959"	bottom="15"/>>
+		<frame index="11" left="929"	top="16"	right ="943"	bottom="31"/>>
+	</sprite>
+
+	<sprite name ="bigfern" sheet="mainlev" frames="3">
+		<frame index="0" left="864"	top="240"	right ="911"	bottom="287"/>>
+		<frame index="1" left="864"	top="288"	right ="911"	bottom="335"/>>
+		<frame index="2" left="864"	top="336"	right ="911"	bottom="383"/>>
+	</sprite>
+	<sprite name ="fern" sheet="mainlev" frames="6">
+		<frame index="0" left="916"	top="244"	right ="939"	bottom="267"/>>
+		<frame index="1" left="948"	top="244"	right ="971"	bottom="267"/>>
+		<frame index="2" left="948"	top="292"	right ="971"	bottom="315"/>>
+		<frame index="3" left="916"	top="292"	right ="939"	bottom="315"/>>
+		<frame index="4" left="948"	top="340"	right ="971"	bottom="363"/>>
+		<frame index="5" left="916"	top="340"	right ="939"	bottom="363"/>>
+	</sprite>
+
+	<sprite name="railstop" sheet="mainlev" left="945"	top="0"	right ="959"	bottom="31"/>>
+
+  </sprites>
+
+  <!-- sound -->
+  
+  <sounds  path="Media\Sounds">  
+    <sound name="start" file="start.wav" instances="1"/>
+    <sound name="gun" file="44magnum.wav" instances="8"/>
+    <sound name="ricochet" file="ricochet.wav" instances="8"/>
+    <sound name="clang" file="clang.wav" instances="4"/>
+    <sound name="grunt" file="umph.wav" instances="4"/>
+    <sound name="ow" file="ow.wav" instances="8"/>
+    <sound name="boom" file="boom.wav" instances="4"/>
+	<sound name="swing" file="swing.wav" instances="8"/>
+	<sound name="impact" file="impact.wav" instances="4"/>
+	<sound name="thump" file="thump.wav" instances="8"/>
+	<sound name="achievement" file="achievement.wav" instances="8"/>
+	<sound name="acquire" file="acquire.wav" instances="8"/>
+	<sound name="brassmusic" file="brassmusic.wav" instances="8"/>
+	<sound name="drums" file="drums.wav" instances="8"/>
+	<sound name="soundtrack" file="soundtrack.wav" instances="8"/>
+	<sound name="mainmenu" file="Intesification.wav" instances="1"/>
+	<sound name="exploration" file="Exploration.wav" instances="1"/>
+	<sound name="battle" file="Battle.wav" instances="1"/> 
+	<sound name="boss" file="Boss.wav" instances="1"/> 
+	<sound name="bossdefeated" file="BossDefeated.wav" instances="1"/> 
+	<sound name="endingcredits" file="EndingCredits.wav" instances="1"/> 
+	<sound name="gameover" file="GameOver.wav" instances="1"/> 
+	<sound name="lastlevel" file="LastLevel.wav" instances="1"/> 
+	<sound name="story" file="Story.wav" instances="1"/> 
+	<sound name="health" file="health.wav" instances="3"/> 
+	<sound name="magic" file="swing3.wav" instances="3"/> 
+
+
+
+  </sounds>
+</settings>
