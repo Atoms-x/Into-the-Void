@@ -95,6 +95,6 @@ MINIMUM:
 ## More from This Developer
 
 ## Credits
-* **Chet Lockwood** - [SgtR0ck](https://github.com/SgtR0ck)
+* **Chet Lockwood** - [Atoms-x](https://github.com/Atoms-x)
 * **Matt Stieferman** -
 * **Shea** -
