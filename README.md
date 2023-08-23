@@ -96,5 +96,5 @@ MINIMUM:
 
 ## Credits
 * **Chet Lockwood** - [Atoms-x](https://github.com/Atoms-x)
-* **Matt Stieferman** -
+* **Matt Stieferman** - [mattstief](https://github.com/mattstief)
 * **Shea** -
