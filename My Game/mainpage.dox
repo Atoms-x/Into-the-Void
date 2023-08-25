@@ -1,0 +1,98 @@
+/// \mainpage 
+/// 
+/// This game is identical to the 
+/// [Top-Down Shooter Prototype](https://larc.unt.edu/code/topdown/)
+/// with the addition of sprite sheets and animated ant sprites.
+///
+/// @image html screenshot.png
+///
+/// Most of the sprites come from a single sprite sheet:
+///
+/// @image html spritesheet.png
+///
+/// The ant walk cycle is read from a sprite sheet containing four side-by-side frames.
+///
+/// @image html ant.png
+///
+/// The ant walk cycle is a simple tripod, that is, three legs remain in contact
+/// with the floor at all times.
+///
+/// @image html antwalk2.gif
+/// 
+/// Keyboard Controls
+/// -----------------
+///
+/// <center>
+/// <table>
+/// <tr>
+/// <td><center><b>Key</b></center></td>
+/// <td><center><b>Action</b></center></td>
+/// <tr>
+/// <td>F1</td>
+/// <td>Help (this document)</td>
+/// <tr>
+/// <td>F2</td>
+/// <td>Toggle frame rate display</td>
+/// <tr>
+/// <td>Up arrow</td>
+/// <td>Move forwards when pressed</td>
+/// <tr>
+/// <td>Down arrow</td>
+/// <td>Retreat when pressed</td>
+/// <tr>
+/// <td>Left arrow</td>
+/// <td>Rotate counterclockwise when pressed</td>
+/// <tr>
+/// <td>Right arrow</td>
+/// <td>Rotate clockwise when pressed</td>
+/// <tr>
+/// <td>Space</td>
+/// <td>Shoot</td>
+/// <tr>
+/// <td>A</td>
+/// <td>Strafe left</td>
+/// <tr>
+/// <td>D</td>
+/// <td>Strafe right</td>
+/// <tr>
+/// <td>Backspace</td>
+/// <td>Restart game</td>
+/// <tr>
+/// <td>PrtScr (hold down)</td>
+/// <td>Save screenshot to a PNG file</td>
+/// </table>
+/// </center>
+/// 
+/// X-Box Controller
+/// ----------------
+///
+/// <center>
+/// <table>
+/// <tr>
+/// <td><center><b>Control</b></center></td>
+/// <td><center><b>Action</b></center></td>
+/// <tr>
+/// <td>Right Trigger</td>
+/// <td>Forward speed</td>
+/// <tr>
+/// <td>Right Thumb</td>
+/// <td>Rotation speed and direction</td>
+/// <tr>
+/// <td>Right Button</td>
+/// <td>Shoot</td>
+/// <tr>
+/// <td>DPad Left</td>
+/// <td>Strafe left</td>
+/// <tr>
+/// <td>DPad Right</td>
+/// <td>Strafe right</td>
+/// </table>
+/// </center>
+///
+/// The LARC Engine
+/// ---------------
+///
+/// This code uses the [LARC Engine](https://larc.unt.edu/code/engine/) and is
+/// part of the [LARC Code Base](https://larc.unt.edu/code/).
+
+
