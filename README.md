@@ -1,12 +1,15 @@
-<p align="right"> <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white"><img src="https://img.shields.io/badge/LARC%20ENGINE-313131?style=for-the-badge&logoColor=white"><img src="https://img.shields.io/badge/Itch.io-FA5C5C?style=for-the-badge&logo=itchdotio&logoColor=white">
-</p>
- 
-# Into the Void
+ # Into the Void
 
-![image](https://github.com/SgtR0ck/Into-the-Void/assets/8111664/cfd0330f-89f1-451a-a0c5-beb88f9cdce8)
+<img src = "https://github.com/SgtR0ck/Into-the-Void/assets/8111664/cfd0330f-89f1-451a-a0c5-beb88f9cdce8" 
+ width="1368"
+ height="auto" />
 
 ## About this Game
 Into the Void is a Zelda-like isometric top down dungeon crawler following the hero as he descends into the Void, in search of the treasure that could bring peace to the world. Slash, dash, and fireball your way through the Void, the fate of the world rests in your hands! Fight through mobs of slimes, dodge the quick strikes of the mabbits, be wary of the range of the obelisks, and find gaps in the tough bark of the ents. Rumor has it that there might be even worse deeper down!
+
+<img src = "https://github.com/Atoms-x/Into-the-Void/assets/8111664/919e75ca-708d-4fb9-9deb-0ce13270d99c" 
+ width="1368"
+ height="auto" />
 
 ### Know your Enemy
 
@@ -109,6 +112,12 @@ MINIMUM:
 `Storage:` 117 MB available space
 
 `Additional Notes:` Keyboard Only
+
+## Want to See More Gameplay
+
+[Into the Void](https://www.youtube.com/watch?v=eaaxUuIUuxA)
+
+![YoutubeCard](https://github.com/Atoms-x/Into-the-Void/assets/8111664/96dfd061-f290-4509-8f86-3a4ad70b3afe)
 
 ## More from This Developer
 
