@@ -1,38 +1,47 @@
-name: GitHub Readme YouTube Cards
-on:
-  schedule:
-    # Runs every hour, on the hour
-    - cron: "0 * * * *"
-  workflow_dispatch:
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    # Allow the job to commit to the repository
-    permissions:
-      contents: write
-    # Run the GitHub Readme YouTube Cards action
-    steps:
-      - uses: Atoms-x/github-readme-youtube-cards@main
-        with:
-          channel_id: UCJ0clA3hrceiVqrSp3sItbg
-          lang: en
-          comment_tag_name: YOUTUBE-CARDS
-          youtube_api_key: ${{ secrets.YOUTUBE_API_KEY }} # Configured in Actions Secrets (see Wiki)
-          max_videos: 1
-          base_url: https://ytcards.demolab.com/
-          card_width: 250
-          border_radius: 5
-          background_color: "#0d1117"
-          title_color: "#ffffff"
-          stats_color: "#dedede"
-          theme_context_light: '{ "background_color": "#ffffff", "title_color": "#24292f", "stats_color": "#57606a" }'
-          theme_context_dark: '{ "background_color": "#0d1117", "title_color": "#ffffff", "stats_color": "#dedede" }'
-          max_title_lines: 2
-          show_duration: true # Requires YouTube API Key (see Wiki)
-          author_name: GitHub Actions
-          author_email: 41898282+github-actions[bot]@users.noreply.github.com
-          commit_message: "docs(readme): Update YouTube cards"
-          readme_path: README.md
-          output_only: false
-          output_type: markdown
+          - name: GitHub Readme YouTube Cards
+  # You may pin to the exact commit or the version.
+  # uses: DenverCoder1/github-readme-youtube-cards@8c4f17436b9cefb347e458304a3629a5f19381c5
+  uses: DenverCoder1/github-readme-youtube-cards@1.7.0
+  with: UCJ0clA3hrceiVqrSp3sItbg
+    # The channel ID to use for the feed
+    channel_id: 
+    # The language you want your cards description to use
+    lang: en
+    # The name of the comment tag to use for the cards
+    comment_tag_name: # optional, default is YOUTUBE-CARDS
+    # The maximum number of videos to display
+    max_videos: 1 # optional, default is 6
+    # The base URL to use for the cards
+    base_url: # optional, default is https://ytcards.demolab.com/
+    # The YouTube API key to use for additional features such a the video duration
+    youtube_api_key: # optional, default is 
+    # The width of the SVG cards
+    card_width: # optional, default is 250
+    # The border radius of the SVG cards
+    border_radius: # optional, default is 5
+    # The background color of the SVG cards
+    background_color: # optional, default is #0d1117
+    # The color of the title text
+    title_color: # optional, default is #ffffff
+    # The color of the stats text
+    stats_color: # optional, default is #dedede
+    # JSON theme for light mode (keys: background_color, title_color, stats_color).
+    theme_context_light: # optional, default is {}
+    # JSON theme for dark mode (keys: background_color, title_color, stats_color)
+    theme_context_dark: # optional, default is {}
+    # The maximum number of lines to use for the title
+    max_title_lines: # optional, default is 1
+    # Whether to show the video duration. Requires `youtube_api_key` to be set.
+    show_duration: # optional, default is false
+    # The name of the committer
+    author_name: # optional, default is GitHub Actions
+    # The email address of the committer
+    author_email: # optional, default is 41898282+github-actions[bot]@users.noreply.github.com
+    # The commit message to use for the commit
+    commit_message: # optional, default is docs(readme): Update YouTube cards
+    # The path to the readme file
+    readme_path: # optional, default is README.md
+    # Whether to return the section markdown as output instead of writing to the file
+    output_only: # optional, default is false
+    # The type of output to be rendered by the action ('markdown' or 'html')
+    output_type: # optional, default is markdown
