@@ -121,6 +121,18 @@ MINIMUM:
 
 ## More from This Developer
 
+<a href="https://github.com/Atoms-x/Hell-Broke-Loose">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=Atoms-x&repo=Hell-Broke-Loose&theme=neon" 
+    width="400"
+    height="Auto"/>
+</a>
+&nbsp; &nbsp;
+<a href="https://github.com/Atoms-x/Hell-Broke-Loose">
+  <img align="center" src="https://github.com/Atoms-x/Atoms-x/assets/8111664/86a50b5c-3ef6-44bb-8b25-a89b94585a59"
+    width="400"
+    height="Auto"/>
+</a>
+
 ## Credits
 * **Chet Lockwood** - [Atoms-x](https://github.com/Atoms-x)
 * **Matt Stieferman** - [mattstief](https://github.com/mattstief)
