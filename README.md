@@ -1,3 +1,6 @@
+<p align="right"> <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white"><img src="https://img.shields.io/badge/LARC%20ENGINE-313131?style=for-the-badge&logoColor=white"><img src="https://img.shields.io/badge/Itch.io-FA5C5C?style=for-the-badge&logo=itchdotio&logoColor=white">
+</p>
+
  # Into the Void
 
 <img src = "https://github.com/SgtR0ck/Into-the-Void/assets/8111664/cfd0330f-89f1-451a-a0c5-beb88f9cdce8" 
